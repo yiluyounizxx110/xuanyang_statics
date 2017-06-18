@@ -1,0 +1,131 @@
+*{
+	padding:0;
+	margin:0;
+	border:0;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clear{
+	clear: both;
+}
+body{
+	width:100%;
+	height:100%;
+	overflow-y: hidden;
+}
+a{
+	text-decoration: none;
+}
+.nav{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:94px;
+	border-bottom: 1px solid #DDDDDD;
+	box-shadow: 1px 0px 10px rgba(0, 0, 0, .05);
+}
+.nav .logo{
+	float:left;
+	width:310px;
+	height:94px;
+	margin-left:50px;
+	background: url(../images/xuanyang.png) no-repeat 0 -5px;
+}
+.nav .user_tip{
+	display: inline-block;
+	height:94px;
+	line-height: 94px;
+	padding-left:20px;
+	padding-right: 10px;
+}
+.nav .exit_login{
+	display: inline-block;
+	height:94px;
+	line-height: 94px;
+	padding-left:10px;
+	padding-right: 30px;
+	color: #336CA6;
+}
+.menu{
+	position: absolute;
+	background-color: #ffffff;
+	top:95px;
+	left:0;
+	width:210px;
+	height:calc(100% - 95px);
+	box-sizing: border-box;
+	box-shadow: 1px 0px 10px rgba(0, 0, 0, .05);
+	overflow-x: hidden;
+}
+.menu_item{
+	display: block;
+	width:210px;
+	height:55px;
+	line-height: 55px;
+	text-indent: 60px;
+	color: #336CA6;
+	cursor: pointer;
+	position: relative;
+}
+.menu_item:hover{
+	background-color: #F1F1F1;
+}
+.menu_item.active{
+	background-color: #336CA6;
+	color:#ffffff;
+}
+.menu_item:before{
+	content: "";
+	float:left;
+	width:20px;
+	height:20px;
+    top: 18px;
+    left: 30px;
+	position: absolute;
+	background:url(../images/user.png) no-repeat 0px 0px;
+}
+.menu_item.active:before{
+	content: "";
+	float:left;
+	width:20px;
+	height:20px;
+    top: 18px;
+    left: 30px;
+	position: absolute;
+	background:url(../images/user1.png) no-repeat 0px 0px;
+}
+.menu_item.user:before{
+	background:url(../images/user.png) no-repeat 0px 0px;
+}
+.menu_item.user.active:before{
+	background:url(../images/user1.png) no-repeat 0px 0px;
+}
+.menu_item.private:before{
+	background:url(../images/private.png) no-repeat 0px 0px;
+}
+.menu_item.active.private:before{
+	background:url(../images/private1.png) no-repeat 0px 0px;
+}
+.menu_item.public:before{
+	background:url(../images/public.png) no-repeat 0px 0px;
+}
+.menu_item.active.public:before{
+	background:url(../images/public1.png) no-repeat 0px 0px;
+}
+.content{
+	box-sizing: border-box;
+	position: absolute;
+	height:calc(100% - 95px);
+	width:calc(100% - 210px);
+	top:95px;
+	left:210px;
+}
+.content iframe{
+	height:100%;
+	width:100%;
+}
