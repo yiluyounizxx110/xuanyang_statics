@@ -1,0 +1,53 @@
+*{
+	padding:0;
+	margin:0;
+	border:0;
+}
+.btn_group{
+	margin-left: 20px;
+	margin-top:20px;
+}
+.btn_group a{
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 20px;
+	height:30px;
+	line-height: 30px;
+	background-color: #336CA6;
+	color:#ffffff;
+	text-decoration: none;
+	position: relative;
+}
+.btn_group a:hover{
+	background-color: #2a5786;
+}
+.btn_group a.adduser:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 16px;
+	height:16px;
+	left:12px;
+	top:7px;
+	background-image: url(../images/add.png);
+	background-repeat: no-repeat;
+	background-position:  0px 0px;
+}
+table.user_list{
+	width:calc(100% - 40px);
+	margin: 10px auto;
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+}
+table.user_list td{
+	border: 1px solid #dddddd;
+	height:40px;
+	line-height: 40px;
+	border-collapse: collapse;
+}
+table.user_list td.username{
+	text-align: center;
+}
+table.user_list td.userrealname{
+	text-align: center;
+}
