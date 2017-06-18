@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>二维码工具</title>
+		<link rel="stylesheet" type="text/css" href="lib/button.css"/>
+	</head>
+	<body>
+		<input type="text" style="width:300px;" class="content">
+		<input type="text" class="img_width"/>
+		<button class="generateQR">生成二维码</button>
+		<div id="qrcode">
+		</div>	
+	</body>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+    <script type="text/javascript" src="js/lib/jquery.qrcode.min.js" ></script>
+	<script>
+		//中文编码格式转换
+	    function utf16to8(str) {
+	        var out, i, len, c;
+	        out = "";
+	        len = str.length;
+	        for (i = 0; i < len; i++) {
+	            c = str.charCodeAt(i);
+	            if ((c >= 0x0001) && (c <= 0x007F)) {
+	                out += str.charAt(i);
+	            } else if (c > 0x07FF) {
+	                out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
+	                out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
+	                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+	            } else {
+	                out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
+	                out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+	            }
+	        }
+	        return out;
+	    }  
+	    
+	    function generateQRCode(rendermethod, picwidth, picheight, url) {
+	        $("#qrcode").html('');
+		    $("#qrcode").qrcode({ 
+		        render: rendermethod, // 渲染方式有table方式（IE兼容）和canvas方式
+		        width: picwidth, //宽度 
+		        height:picheight, //高度 
+		        text: utf16to8(url), //内容 
+		        typeNumber:-1,//计算模式
+		        correctLevel:2,//二维码纠错级别
+		        background:"#ffffff",//背景颜色
+		        foreground:"#000000"  //二维码颜色
+		
+		    });
+		}
+	    
+	    $(function(){
+	    	$(".generateQR").click(function(){
+	    		var width = $(".img_width").val();
+				if(width == ''){
+					width = 64;
+				}
+				generateQRCode("table",width, width, "测试");
+	    	})
+	    })
+	    
+	</script>
+</html>
