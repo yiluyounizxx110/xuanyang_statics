@@ -3,6 +3,9 @@
 	margin:0;
 	border:0;
 }
+body{
+	min-width: 1150px;
+}
 .btn_group{
 	margin-left: 20px;
 	margin-top:20px;
@@ -11,8 +14,8 @@
 	display: inline-block;
 	padding-left: 30px;
 	padding-right: 20px;
-	height:30px;
-	line-height: 30px;
+	height:40px;
+	line-height: 40px;
 	background-color: #336CA6;
 	color:#ffffff;
 	text-decoration: none;
@@ -28,7 +31,7 @@
 	width: 16px;
 	height:16px;
 	left:12px;
-	top:7px;
+	top:12px;
 	background-image: url(../images/add.png);
 	background-repeat: no-repeat;
 	background-position:  0px 0px;
@@ -39,15 +42,86 @@ table.user_list{
 	border: 1px solid #dddddd;
 	border-collapse: collapse;
 }
-table.user_list td{
-	border: 1px solid #dddddd;
+table.user_list td,table.user_list th{
+	border: 1px solid #E2E2E2;
 	height:40px;
 	line-height: 40px;
 	border-collapse: collapse;
 }
-table.user_list td.username{
-	text-align: center;
+table.user_list th{
+	background-color: #F2F2F2;
 }
-table.user_list td.userrealname{
+table.user_list tr:hover{
+    background-color: #f8f8f8;
+}
+table.user_list .username{
 	text-align: center;
+	width:15%;
+	max-width: 200px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+table.user_list .userrealname{
+	text-align: center;
+	width:12%;
+	max-width: 200px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+table.user_list .email{
+	text-align: center;
+	width:18%;
+	max-width: 200px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+table.user_list .createtime{
+	text-align: center;
+	width:20%;
+	max-width: 200px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+table.user_list .isadmin{
+	text-align: center;
+	width:10%;
+	max-width: 100px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+table.user_list .usermobile{
+	text-align: center;
+	width:12%;
+	max-width: 150px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+table.user_list .opr_box{
+	width: 120px;
+	max-width: 200px;
+}
+.opr_box_w{
+	width: 120px;
+	height:40px;
+	line-height: 40px;
+	margin: 0 auto;
+}
+.opr_box_w .opr_btn{
+	display: inline-block;
+	width:60px;
+	height:40px;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	color: #155FAA;
+}
+.opr_box_w .opr_btn:hover{
+	color: red;
 }

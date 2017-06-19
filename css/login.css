@@ -12,6 +12,9 @@ body{
 	background-position: 50% -50%;
 	background-repeat: no-repeat;
 }
+.none{
+	display: none;
+}
 
 .login_main{
 	width:100%;
@@ -50,7 +53,7 @@ body{
 	border-radius: 2px;
 }
 .login_body input.err{
-	border:1px solid #E01121;
+	border:1px solid red;
 }
 .login_body .submitbtn{
 	width:310px;
