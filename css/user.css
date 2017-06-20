@@ -31,6 +31,7 @@ body{
 .form_title legend{
 	margin-left: 100px;
 	padding: 0 5px;
+	color:#8D8D8D;
 }
 .form_group{
 	float: left;
@@ -42,6 +43,7 @@ body{
 	height:40px;
 	line-height: 40px;
 	text-align: right;
+	color:#8D8D8D;
 }
 .form_group .label_content{
 	width:250px;
@@ -50,11 +52,13 @@ body{
 	display: inline-block;
 	margin-left: 20px;
 }
-.form_group .label_content input[type='text']{
+.form_group .label_content input[type='text'],.form_group .label_content input[type='password']{
 	width:250px;
 	height:40px;
 	line-height: 40px;
 	outline: none;
+	text-indent: 10px;
+	font-size: 15px;
 	border: 1px solid #E2E2E2;
 }
 .form_group .label_content input[type='radio']{
@@ -65,11 +69,13 @@ body{
 }
 .form_group .label_content label{
 	margin-right: 10px;
+	color:#8D8D8D;
 }
 
 .btn_group{
-	margin-left: 20px;
-	margin-top:20px;
+	margin: 20px 20px 0;
+	/*margin-left: 20px;
+	margin-top:20px;*/
 }
 .btn_group a{
 	padding-left: 30px;
@@ -87,7 +93,7 @@ body{
 }
 
 .savebtn{
-	margin-left:10px;
+	margin-left:20px;
 }
 .btn_group a.cancelbtn{
 	margin-left:10px;
