@@ -21,6 +21,10 @@ body{
 .cursor{
 	cursor: pointer;
 }
+/****/
+.searchcondition{
+	margin: 20px 20px;
+}
 .main{
 	margin: 20px 20px;
 }
@@ -85,11 +89,58 @@ body{
 	margin-right: 10px;
 	color:#8D8D8D;
 }
-
+.form_group .btn_def{
+	position: relative;
+	cursor: pointer;
+	padding-left: 35px;
+	padding-right: 20px;
+	display: inline-block;
+	height:40px;
+	line-height: 40px;
+	background-color: #D0D0D0;
+	color:#ffffff;
+}
+.form_group .btn_def:hover{
+	background-color: #8D8D8D;
+}
+.form_group .search_btn{
+	background-color: #336CA6;
+}
+.form_group .search_btn:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 16px;
+	height:16px;
+	left:12px;
+	top:12px;
+	background-image: url(../images/search.png);
+	background-repeat: no-repeat;
+	background-position:  0px 0px;
+}
+.form_group .search_btn:hover{
+	background-color: #2a5786;
+}
+.form_group .addcustomer_btn{
+	background-color: #1E9FFF;
+}
+.form_group .addcustomer_btn:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 16px;
+	height:16px;
+	left:12px;
+	top:12px;
+	background-image: url(../images/add.png);
+	background-repeat: no-repeat;
+	background-position:  0px 0px;
+}
+.form_group .addcustomer_btn:hover{
+	background-color: #057bd2;
+}
 .btn_group{
 	margin: 20px 20px 0;
-	/*margin-left: 20px;
-	margin-top:20px;*/
 }
 .btn_group a{
 	padding-left: 30px;
@@ -133,6 +184,40 @@ body{
 	background-repeat: no-repeat;
 	background-position:  0px 0px;
 }
+/**客户列表***/
+table.customerlist{
+	table-layout:fixed;
+	margin: 10px 0 0 10px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+}
+table.customerlist td,table.customerlist th{
+	border: 1px solid #E2E2E2;
+	height:40px;
+	line-height: 40px;
+	border-collapse: collapse;
+}
+table.customerlist th{
+	background-color: #F2F2F2;
+}
+table.customerlist tr:hover{
+    background-color: #f8f8f8;
+}
+.customerlist td.customer_name div{
+	width:100px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.customerlist td.customer_owner div{
+	width:100px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+/**用户列表***/
 table.user_list{
 	width:calc(100% - 40px);
 	margin: 10px auto;
@@ -144,7 +229,6 @@ table.user_list td,table.user_list th{
 	height:40px;
 	line-height: 40px;
 	border-collapse: collapse;
-	/*font-size: 13px;*/
 }
 table.user_list th{
 	background-color: #F2F2F2;
