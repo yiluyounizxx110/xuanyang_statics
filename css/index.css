@@ -117,6 +117,12 @@ a{
 .menu_item.active.public:before{
 	background:url(../images/public1.png) no-repeat 0px 0px;
 }
+.menu_item.edit:before{
+	background:url(../images/edit.png) no-repeat 0px 0px;
+}
+.menu_item.active.edit:before{
+	background:url(../images/edit1.png) no-repeat 0px 0px;
+}
 .content{
 	box-sizing: border-box;
 	position: absolute;

@@ -15,12 +15,25 @@
 			<div class="clear"></div>
 		</div>
 		<div class="menu">
-			<a class="menu_item active user" href="user.html" target="content_frame">用户管理</a>
-			<a class="menu_item public" href="http://www.qq.com" target="content_frame">公海管理</a>
-			<a class="menu_item private" href="customer.html" target="content_frame">私海管理</a>
+			<a class="menu_item active user" path="user.html" target="content_frame">用户管理</a>
+			<a class="menu_item public" path="customer.html" target="content_frame">公海管理</a>
+			<a class="menu_item private" path="customer.html" target="content_frame">私海管理</a>
+			<a class="menu_item edit" path="edituser.html" target="content_frame">个人信息</a>
 		</div>
 		<div class="content">
 			<iframe name="content_frame" src="welcome.html"></iframe>
 		</div>
 	</body>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+	<script>
+		$(function(){
+			$(".menu .menu_item").click(function(){
+				var $this = $(this);
+				if(!$this.hasClass("active")){
+					$this.addClass("active").siblings().removeClass("active");
+					window.open($this.attr("path"),"content_frame")
+				}
+			});
+		});
+	</script>
 </html>

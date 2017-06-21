@@ -5,6 +5,7 @@
 }
 body{
 	min-width: 1150px;
+	overflow-x: hidden;
 }
 .red{
 	color: red;
@@ -23,7 +24,7 @@ body{
 }
 /****/
 .searchcondition{
-	margin: 20px 20px;
+	margin: 20px 20px 0;
 }
 .main{
 	margin: 20px 20px;
@@ -187,9 +188,10 @@ body{
 /**客户列表***/
 table.customerlist{
 	table-layout:fixed;
-	margin: 10px 0 0 10px;
+	margin: 30px 0 0 10px;
 	border: 1px solid #dddddd;
 	border-collapse: collapse;
+	font-size: 14px;
 }
 table.customerlist td,table.customerlist th{
 	border: 1px solid #E2E2E2;
@@ -203,19 +205,217 @@ table.customerlist th{
 table.customerlist tr:hover{
     background-color: #f8f8f8;
 }
-.customerlist td.customer_name div{
+.customerlist td .customer_name{
 	width:100px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
+	color:#8D8D8D;
 }
-.customerlist td.customer_owner div{
+.customerlist td .customer_owner{
+	width:50px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist td .customer_shop_name{
 	width:100px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist td .customer_shop_type{
+	width:120px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist td .customer_address{
+	width:50px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist td a.customer_shop{
+	display: block;
+	width:55px;
+	height:40px;
+}
+.customerlist td a.customer_shop img{
+	float: left;
+	width:16px;
+	height:16px;
+	margin-top: 11px;
+}
+.customerlist td a.customer_shop:after{
+	float: left;
+	width:39px;
+	height:40px;
+	line-height: 40px;
+	content: '查看';
+	color: blue;
+	display: inline-block;
+	text-decoration: none;
+}
+.customerlist td .industry{
+	width:80px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist td .chance_name{
+	width:80px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist td .chance_cate{
+	width:80px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist td .phone{
+	width:80px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist td .qq{
+	width:80px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist td .protect_time{
+	width:80px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist td .last_contact_time{
+	width:80px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist td .customer_opr{
+	width:72px;
+}
+.customerlist td .customer_opr a{
+	display: inline-block;
+	color:blue;
+	text-decoration: none;
+}
+.customerlist td .customer_opr a.edit_customer{
+	padding: 0 5px 0px 5px;
+}
+.customerlist td .customer_opr a.log_op{
+	padding: 0 5px 0px 0px;
+}
+.pg_bar{
+	width: 100%;
+	height:40px;
+	margin:20px 10px;
+}
+.pg_bar .pg_label{
+	display: inline-block;
+	height:40px;
+	line-height: 40px;
+	padding: 0 10px;
+	float: left;
+	color:#8D8D8D;
+}
+.pg_bar .pg_size{
+	width: 40px;
+	height:40px;
+	line-height: 40px;
+	font-size: 16px;
+	float: left;
+	color:#8D8D8D;
+}
+.pg_nums{
+	height:40px;
+	float:left;
+	margin-left:200px;
+}
+.pg_nums .pg_pre{
+	float:left;
+	display: inline-block;
+	cursor: pointer;
+	float:left;
+	padding: 0 10px;
+	margin: 0 5px 0 0;
+	height:40px;
+	line-height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #DCDCDC;
+	background-color: #336CA6;
+	color: #ffffff;
+}
+.pg_nums .pg_num{
+	cursor: pointer;
+	float:left;
+	display: inline-block;
+	float:left;
+	padding: 0 10px;
+	margin: 0 5px;
+	height:40px;
+	color:#8D8D8D;
+	line-height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #DCDCDC;
+}
+.pg_nums .pg_num.cur_page{
+	background-color: #336CA6;
+	color: #ffffff;
+	border: 1px solid #336CA6;
+}
+.pg_nums .pg_num:hover{
+	background-color: #336CA6;
+	color: #ffffff;
+	border: 1px solid #336CA6;
+}
+.pg_nums .pg_next{
+	float:left;
+	cursor: pointer;
+	display: inline-block;
+	float:left;
+	margin: 0 5px 0 0;
+	padding: 0 17px;
+	height:40px;
+	line-height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #DCDCDC;
+	background-color: #336CA6;
+	color: #ffffff;
+}
+.pg_nums .pg_next.disable,.pg_nums .pg_pre.disable{
+	background-color: #DDDDDD;
+	color: #ffffff;
 }
 /**用户列表***/
 table.user_list{
