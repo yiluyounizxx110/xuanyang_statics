@@ -5,7 +5,6 @@
 }
 body{
 	min-width: 1150px;
-	overflow-x: hidden;
 }
 .red{
 	color: red;
@@ -18,6 +17,9 @@ body{
 	padding-right: 5px;
 	position: relative;
 	top:4px;
+}
+.none{
+	display: none;
 }
 .cursor{
 	cursor: pointer;
@@ -323,7 +325,7 @@ table.customerlist tr:hover{
 	color:#8D8D8D;
 }
 .customerlist td .customer_opr{
-	width:72px;
+	width:104px;
 }
 .customerlist td .customer_opr a{
 	display: inline-block;
@@ -334,6 +336,9 @@ table.customerlist tr:hover{
 	padding: 0 5px 0px 5px;
 }
 .customerlist td .customer_opr a.log_op{
+	padding: 0 5px 0px 0px;
+}
+.customerlist td .customer_opr a.kick_out{
 	padding: 0 5px 0px 0px;
 }
 .pg_bar{
