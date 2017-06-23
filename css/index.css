@@ -31,6 +31,7 @@ a{
 }
 .nav .logo{
 	float:left;
+	display: inline-block;
 	width:310px;
 	height:94px;
 	margin-left:50px;
@@ -122,6 +123,12 @@ a{
 }
 .menu_item.active.edit:before{
 	background:url(../images/edit1.png) no-repeat 0px 0px;
+}
+.menu_item.ach:before{
+	background:url(../images/ach.png) no-repeat 0px 0px;
+}
+.menu_item.active.ach:before{
+	background:url(../images/ach1.png) no-repeat 0px 0px;
 }
 .content{
 	box-sizing: border-box;

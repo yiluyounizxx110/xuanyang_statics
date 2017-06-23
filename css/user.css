@@ -92,6 +92,22 @@ body{
 	margin-right: 10px;
 	color:#8D8D8D;
 }
+.form_group textarea{
+	
+}
+.form_group textarea.ach_remark{
+	width:400px;
+	height:120px;
+	line-height: 40px;
+	padding: 5px;
+	color: #8D8D8D;
+	font-size: 15px;
+	outline: none;
+	margin-left: 60px;
+	max-width: 400px;
+	max-height: 120px;
+	border: 1px solid #DDDDDD;
+}
 .form_group .btn_def{
 	position: relative;
 	cursor: pointer;
