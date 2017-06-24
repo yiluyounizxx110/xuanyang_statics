@@ -15,7 +15,15 @@ body{
 .none{
 	display: none;
 }
-
+.default_btn{
+	text-align: center;
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #336CA6;
+}
+.default_btn:hover{
+	background-color: #2a5786;
+}
 .login_main{
 	width:100%;
 	height:310px;
@@ -32,15 +40,25 @@ body{
 	background-color: #ffffff;
     box-shadow: 0 1px 10px #545454;
     border-radius: 6px;
+    overflow: hidden;
+    position: relative;
 }
-.login_body .logo{
+.login_verify_p{
+	width:440px;
+	height:310px;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.login_verify_p .logo{
 	width:310px;
 	height:94px;
 	/*border:1px solid red;*/
 	margin: 10px auto;
 	background: url(../images/xuanyang.png) no-repeat 0 0px;
 }
-.login_body input{
+.login_verify_p input{
 	width:310px;
 	height:40px;
 	line-height: 40px;
@@ -52,10 +70,10 @@ body{
 	text-indent: 10px;
 	border-radius: 2px;
 }
-.login_body input.err{
+.login_verify_p input.err{
 	border:1px solid red;
 }
-.login_body .submitbtn{
+.login_verify_p .submitbtn{
 	width:310px;
 	height:40px;
 	line-height: 40px;
@@ -67,14 +85,94 @@ body{
 	color:#ffffff;
 	cursor:pointer;
 }
-.login_body .submitbtn:hover{
+.login_verify_p .submitbtn:hover{
 	background-color: #2a5786;
 }
-.login_body .err_msg{
+.login_verify_p .err_msg{
 	width:310px;
 	height:40px;
 	margin: 0 auto;
 	font-size: 12px;
 	line-height: 40px;
 	color:red;
+}
+.login_verify_mobile{
+	width:440px;
+	height:310px;
+	position: absolute;
+	z-index: 2;
+	background-color: #ffffff;
+	top: 0;
+	left: 0;
+}
+.login_verify_mobile_t{
+	width:310px;
+	height:40px;
+	margin: 24px auto;
+	text-align: center;
+	line-height: 40px;
+	color: #8D8D8D;
+	font-size: 18px;
+}
+.login_verify_mobile .verify_item{
+	width:310px;
+	height:40px;
+	margin: 26px auto;
+}
+.login_verify_mobile .verify_item.mb_num{
+	/*margin-top:50px;*/
+}
+.login_verify_mobile .verify_item .left_label{
+	float:left;
+	width: 60px;
+	height:40px;
+	line-height: 40px;
+	text-align: left;
+	color: #8D8D8D;
+}
+.login_verify_mobile .verify_item .right_content{
+	float:left;
+	margin-left: 20px;
+	width: 230px;
+	line-height: 40px;
+	height:40px;
+	color: #8D8D8D;
+}
+.login_verify_mobile .verify_item .right_content .mb_num{
+	float: left;
+	width:105px;
+	height:40px;
+	line-height: 40px;
+}
+.login_verify_mobile .verify_item .right_content .verify_code{
+	float: left;
+	width:230px;
+	height:40px;
+	font-size: 16px;
+	line-height: 40px;
+	outline: none;
+	box-sizing: border-box;
+	border: 1px solid #DDDDDD;
+}
+.login_verify_mobile .verify_item .right_content .verify_code_btn{
+	width:110px;
+	height:40px;
+	display: inline-block;
+	margin-left: 15px;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.login_verify_mobile .verify_item .right_content .verify_code_btn.send{
+	background-color: #F2F2F2;
+	color: #999999;
+	cursor:not-allowed;
+	text-align: left;
+	text-indent: 7px;
+}
+.login_verify_mobile .login_verify_mobile_next{
+	width:310px;
+	height:40px;
+	line-height: 40px;
+	margin: 20px auto;
+	border-radius: 2px;
 }
