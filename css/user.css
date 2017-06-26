@@ -4,9 +4,6 @@
 	border:0;
 	font-family: "微软雅黑";
 }
-body{
-	min-width: 1150px;
-}
 .red{
 	color: red;
 }
@@ -25,12 +22,16 @@ body{
 .cursor{
 	cursor: pointer;
 }
+.main_width{
+	width:1260px;
+	margin: 20px 50px;
+}
 /****/
 .searchcondition{
 	margin: 20px 20px 0;
 }
 .main{
-	margin: 20px 20px;
+	margin: 20px 50px;
 }
 .form_title{
 	margin: 20px 20px;
@@ -162,7 +163,7 @@ body{
 	margin: 20px auto;
 }
 .btn_group1{
-	margin: 20px 20px 0;
+	margin: 20px 20px 0 0;
 }
 .btn_group a{
 	padding-left: 30px;
@@ -209,10 +210,11 @@ body{
 /**客户列表***/
 table.customerlist{
 	table-layout:fixed;
-	margin: 30px 0 0 10px;
+	margin: 30px 0 0 0px;
 	border: 1px solid #dddddd;
 	border-collapse: collapse;
 	font-size: 14px;
+	/*width:1260px;*/
 }
 table.customerlist td,table.customerlist th{
 	border: 1px solid #E2E2E2;
@@ -226,29 +228,60 @@ table.customerlist th{
 table.customerlist tr:hover{
     background-color: #f8f8f8;
 }
+.customerlist .collection{
+	width:30px;
+	height:40px;	
+	overflow: hidden;
+}
+.customerlist td.collection{
+	text-indent: -30px;
+	cursor: pointer;
+	background: url(../images/coll.png) no-repeat 5px 10px;
+}
+.customerlist td.collection.collected{
+	background: url(../images/coll-fill.png) no-repeat 5px 10px;
+}
 .customerlist td .customer_name{
-	width:100px;
+	width:90px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
 	color:#8D8D8D;
+}
+.customerlist th.customer_name{
+	width:90px;
+	text-align: center;
 }
 .customerlist td .customer_owner{
-	width:50px;
+	width:80px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
 	color:#8D8D8D;
 }
+.customerlist th.customer_owner{
+	width:80px;
+	text-align: center;
+}
+.private.customerlist .customer_owner{
+	width:60px;
+}
 .customerlist td .customer_shop_name{
-	width:100px;
+	width:110px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
 	color:#8D8D8D;
+}
+.customerlist th.customer_shop_name{
+	width:110px;
+	text-align: center;
+}
+.customerlist.private .customer_shop_name{
+	width:90px;
 }
 .customerlist td .customer_shop_type{
 	width:120px;
@@ -258,6 +291,10 @@ table.customerlist tr:hover{
 	text-align: center;
 	color:#8D8D8D;
 }
+.customerlist th.customer_shop_type{
+	width:120px;
+	text-align: center;
+}
 .customerlist td .customer_address{
 	width:50px;
 	white-space:nowrap;
@@ -266,20 +303,29 @@ table.customerlist tr:hover{
 	text-align: center;
 	color:#8D8D8D;
 }
+.customerlist th.customer_address{
+	width:50px;
+	text-align: center;
+}
 .customerlist td a.customer_shop{
 	display: block;
 	width:55px;
 	height:40px;
+}
+.customerlist th.customer_shop{
+	width:50px;
+	text-align: center;
 }
 .customerlist td a.customer_shop img{
 	float: left;
 	width:16px;
 	height:16px;
 	margin-top: 11px;
+	margin-left: 2px;
 }
 .customerlist td a.customer_shop:after{
 	float: left;
-	width:39px;
+	width:28px;
 	height:40px;
 	line-height: 40px;
 	content: '查看';
@@ -288,60 +334,88 @@ table.customerlist tr:hover{
 	text-decoration: none;
 }
 .customerlist td .industry{
-	width:80px;
+	width:95px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
 	color:#8D8D8D;
+}
+.customerlist th.industry{
+	width:95px;
+	text-align: center;
 }
 .customerlist td .chance_name{
-	width:80px;
+	width:95px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
 	color:#8D8D8D;
+}
+.customerlist th.chance_name{
+	width:95px;
+	text-align: center;
 }
 .customerlist td .chance_cate{
-	width:80px;
+	width:75px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
 	color:#8D8D8D;
+}
+.customerlist th.chance_cate{
+	width:75px;
+	text-align: center;
 }
 .customerlist td .phone{
-	width:80px;
+	width:95px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
 	color:#8D8D8D;
+}
+.customerlist th.phone{
+	width:95px;
+	text-align: center;
 }
 .customerlist td .qq{
-	width:80px;
+	width:100px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
 	color:#8D8D8D;
+}
+.customerlist th.qq{
+	width:100px;
+	text-align: center;
 }
 .customerlist td .protect_time{
-	width:80px;
+	width:90px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
 	color:#8D8D8D;
 }
+.customerlist th.protect_time{
+	width:90px;
+	text-align: center;
+}
 .customerlist td .last_contact_time{
-	width:80px;
+	width:90px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
 	color:#8D8D8D;
+}
+.customerlist th.last_contact_time{
+	width:90px;
+	text-align: center;
 }
 .customerlist td .customer_opr{
 	width:104px;
@@ -443,10 +517,11 @@ table.customerlist tr:hover{
 }
 /**用户列表***/
 table.user_list{
-	width:calc(100% - 40px);
+	width:1260px;
 	margin: 10px auto;
 	border: 1px solid #dddddd;
 	border-collapse: collapse;
+	font-size: 14px;
 }
 table.user_list td,table.user_list th{
 	border: 1px solid #E2E2E2;
@@ -462,48 +537,49 @@ table.user_list tr:hover{
 }
 table.user_list .username{
 	text-align: center;
-	width:15%;
-	max-width: 200px;
+	width:200px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 table.user_list .userrealname{
 	text-align: center;
-	width:12%;
-	max-width: 200px;
+	width:150px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 table.user_list .email{
 	text-align: center;
-	width:18%;
-	max-width: 200px;
+	width:230px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 table.user_list .createtime{
 	text-align: center;
-	width:20%;
-	max-width: 200px;
+	width:190px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 table.user_list .isadmin{
 	text-align: center;
-	width:10%;
-	max-width: 100px;
+	width:90px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+table.user_list .isgroupleader{
+	text-align: center;
+	width:90px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 table.user_list .usermobile{
 	text-align: center;
-	width:12%;
-	max-width: 150px;
+	width:180px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;

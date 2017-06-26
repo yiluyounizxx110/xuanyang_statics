@@ -2,255 +2,286 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>私海</title>
 		<link rel="stylesheet" href="css/user.css" />
 	</head>
 	<body>
-		<div class="searchcondition">
-			<div class="form_group">
-				<div class="label"><span class="must">*</span>客户名称</div>
-				<div class="label_content">
-					<input name="" placeholder="请输入客户名称" type="text"/>
+		<div class="main_width">
+			<div class="searchcondition">
+				<div class="form_group">
+					<div class="label">客户名称</div>
+					<div class="label_content">
+						<input name="" placeholder="请输入客户名称" type="text"/>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="label">旺旺ID</div>
+					<div class="label_content">
+						<input name="" placeholder="请输入旺旺ID" type="text"/>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="label">手机号</div>
+					<div class="label_content">
+						<input name="" placeholder="请输入手机号" type="text"/>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="label">流程名称</div>
+					<div class="label_content">
+						<select>
+							<option>请选择</option>
+							<option>SEM流程标题</option>
+							<option>变态客户群</option>
+						</select>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="search_btn btn_def">搜索</div>
+					<div class="addcustomer_btn btn_def" onclick="window.open('addcustomer.html','_self')">新增</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<table class="customerlist private">
+				<tr>
+					<th class="collection">收藏</th>
+					<th class="customer_name">客户名称</th>
+					<th class="customer_owner">拥有人</th>
+					<th class="customer_shop_name">网店</th>
+					<th class="customer_shop_type">网店类型</th>
+					<th class="customer_address">所在地</th>
+					<th class="customer_shop">店铺</th>
+					<th class="industry">行业</th>
+					<th class="chance_name">机会名称</th>
+					<th class="chance_cate">机会分类</th>
+					<th class="phone">手机</th>
+					<th class="qq">QQ</th>
+					<th class="protect_time">保护日期</th>
+					<th class="last_contact_time">最近联系</th>
+					<th class="customer_opr">操作</th>
+				</tr>
+				<tr>
+					<td class="collection collected">收藏</td>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="chance_cate">准备合作</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="protect_time">2017-12-12</div></td>
+					<td><div class="last_contact_time">2017-12-12</div></td>
+					<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
+				</tr>
+				<tr>
+					<td class="collection collected">收藏</td>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="chance_cate">准备合作</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="protect_time">2017-12-12</div></td>
+					<td><div class="last_contact_time">2017-12-12</div></td>
+					<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
+				</tr>
+				<tr>
+					<td class="collection">收藏</td>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="chance_cate">准备合作</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="protect_time">2017-12-12</div></td>
+					<td><div class="last_contact_time">2017-12-12</div></td>
+					<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
+				</tr>
+				<tr>
+					<td class="collection">收藏</td>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="chance_cate">准备合作</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="protect_time">2017-12-12</div></td>
+					<td><div class="last_contact_time">2017-12-12</div></td>
+					<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
+				</tr>
+				<tr>
+					<td class="collection">收藏</td>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="chance_cate">准备合作</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="protect_time">2017-12-12</div></td>
+					<td><div class="last_contact_time">2017-12-12</div></td>
+					<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
+				</tr>
+				<tr>
+					<td class="collection">收藏</td>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="chance_cate">准备合作</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="protect_time">2017-12-12</div></td>
+					<td><div class="last_contact_time">2017-12-12</div></td>
+					<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
+				</tr>
+				<tr>
+					<td class="collection">收藏</td>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="chance_cate">准备合作</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="protect_time">2017-12-12</div></td>
+					<td><div class="last_contact_time">2017-12-12</div></td>
+					<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
+				</tr>
+				<tr>
+					<td class="collection">收藏</td>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="chance_cate">准备合作</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="protect_time">2017-12-12</div></td>
+					<td><div class="last_contact_time">2017-12-12</div></td>
+					<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
+				</tr>
+				<tr>
+					<td class="collection">收藏</td>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="chance_cate">准备合作</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="protect_time">2017-12-12</div></td>
+					<td><div class="last_contact_time">2017-12-12</div></td>
+					<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
+				</tr>
+				<tr>
+					<td class="collection">收藏</td>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="chance_cate">准备合作</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="protect_time">2017-12-12</div></td>
+					<td><div class="last_contact_time">2017-12-12</div></td>
+					<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
+				</tr>
+			</table>
+			<div class="pg_bar">
+				<select class="pg_size">
+					<option>10</option>
+					<option>20</option>
+					<option>50</option>
+				</select>
+				<div class="pg_label">共<span>100</span>条</div>
+				<div class="pg_nums">
+					<a class="pg_pre">上一页</a>
+					<a class="pg_num">1</a>
+					<a class="pg_num">2</a>
+					<a class="pg_num cur_page">3</a>
+					<a class="pg_num">4</a>
+					<a class="pg_num">5</a>
+					<a class="pg_num">6</a>
+					<a class="pg_num">7</a>
+					<a class="pg_next disable">下一页</a>
 				</div>
 			</div>
-			<div class="form_group">
-				<div class="label"><span class="must">*</span>旺旺ID</div>
-				<div class="label_content">
-					<input name="" placeholder="请输入旺旺ID" type="text"/>
-				</div>
-			</div>
-			<div class="form_group">
-				<div class="search_btn btn_def">搜索</div>
-				<div class="addcustomer_btn btn_def" onclick="window.open('addcustomer.html','_self')">新增</div>
-			</div>
-			<div class="clear"></div>
 		</div>
-		<table class="customerlist">
-			<tr>
-				<th>客户名称</th>
-				<th>拥有人</th>
-				<th class="customer_shop_name">网店</th>
-				<th class="customer_shop_type">网店类型</th>
-				<th class="customer_address">所在地</th>
-				<th class="customer_shop">店铺</th>
-				<th class="industry">行业</th>
-				<th class="chance_name">机会名称</th>
-				<th class="chance_cate">机会分类</th>
-				<th class="phone">手机</th>
-				<th class="qq">QQ</th>
-				<th class="protect_time">保护日期</th>
-				<th class="last_contact_time">最近联系</th>
-				<th class="customer_opr">操作</th>
-			</tr>
-			<tr>
-				<td><div class="customer_name">老李木匠店</div></td>
-				<td><div class="customer_owner">张川川</div></td>
-				<td><div class="customer_shop_name">老李木匠店</div></td>
-				<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-				<td><div class="customer_address">江苏</div></td>
-				<td>
-					<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-					</a>
-				</td>
-				<td><div class="industry">家具/家具制造业</div></td>
-				<td><div class="chance_name">SEM业务流程</div></td>
-				<td><div class="chance_cate">准备合作</div></td>
-				<td><div class="phone">13187872313</div></td>
-				<td><div class="qq">897867546</div></td>
-				<td><div class="protect_time">2017-12-12</div></td>
-				<td><div class="last_contact_time">2017-12-12</div></td>
-				<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
-			</tr>
-			<tr>
-				<td><div class="customer_name">老李木匠店</div></td>
-				<td><div class="customer_owner">张川川</div></td>
-				<td><div class="customer_shop_name">老李木匠店</div></td>
-				<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-				<td><div class="customer_address">江苏</div></td>
-				<td>
-					<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-					</a>
-				</td>
-				<td><div class="industry">家具/家具制造业</div></td>
-				<td><div class="chance_name">SEM业务流程</div></td>
-				<td><div class="chance_cate">准备合作</div></td>
-				<td><div class="phone">13187872313</div></td>
-				<td><div class="qq">897867546</div></td>
-				<td><div class="protect_time">2017-12-12</div></td>
-				<td><div class="last_contact_time">2017-12-12</div></td>
-				<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
-			</tr>
-			<tr>
-				<td><div class="customer_name">老李木匠店</div></td>
-				<td><div class="customer_owner">张川川</div></td>
-				<td><div class="customer_shop_name">老李木匠店</div></td>
-				<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-				<td><div class="customer_address">江苏</div></td>
-				<td>
-					<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-					</a>
-				</td>
-				<td><div class="industry">家具/家具制造业</div></td>
-				<td><div class="chance_name">SEM业务流程</div></td>
-				<td><div class="chance_cate">准备合作</div></td>
-				<td><div class="phone">13187872313</div></td>
-				<td><div class="qq">897867546</div></td>
-				<td><div class="protect_time">2017-12-12</div></td>
-				<td><div class="last_contact_time">2017-12-12</div></td>
-				<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
-			</tr>
-			<tr>
-				<td><div class="customer_name">老李木匠店</div></td>
-				<td><div class="customer_owner">张川川</div></td>
-				<td><div class="customer_shop_name">老李木匠店</div></td>
-				<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-				<td><div class="customer_address">江苏</div></td>
-				<td>
-					<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-					</a>
-				</td>
-				<td><div class="industry">家具/家具制造业</div></td>
-				<td><div class="chance_name">SEM业务流程</div></td>
-				<td><div class="chance_cate">准备合作</div></td>
-				<td><div class="phone">13187872313</div></td>
-				<td><div class="qq">897867546</div></td>
-				<td><div class="protect_time">2017-12-12</div></td>
-				<td><div class="last_contact_time">2017-12-12</div></td>
-				<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
-			</tr>
-			<tr>
-				<td><div class="customer_name">老李木匠店</div></td>
-				<td><div class="customer_owner">张川川</div></td>
-				<td><div class="customer_shop_name">老李木匠店</div></td>
-				<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-				<td><div class="customer_address">江苏</div></td>
-				<td>
-					<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-					</a>
-				</td>
-				<td><div class="industry">家具/家具制造业</div></td>
-				<td><div class="chance_name">SEM业务流程</div></td>
-				<td><div class="chance_cate">准备合作</div></td>
-				<td><div class="phone">13187872313</div></td>
-				<td><div class="qq">897867546</div></td>
-				<td><div class="protect_time">2017-12-12</div></td>
-				<td><div class="last_contact_time">2017-12-12</div></td>
-				<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
-			</tr>
-			<tr>
-				<td><div class="customer_name">老李木匠店</div></td>
-				<td><div class="customer_owner">张川川</div></td>
-				<td><div class="customer_shop_name">老李木匠店</div></td>
-				<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-				<td><div class="customer_address">江苏</div></td>
-				<td>
-					<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-					</a>
-				</td>
-				<td><div class="industry">家具/家具制造业</div></td>
-				<td><div class="chance_name">SEM业务流程</div></td>
-				<td><div class="chance_cate">准备合作</div></td>
-				<td><div class="phone">13187872313</div></td>
-				<td><div class="qq">897867546</div></td>
-				<td><div class="protect_time">2017-12-12</div></td>
-				<td><div class="last_contact_time">2017-12-12</div></td>
-				<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
-			</tr>
-			<tr>
-				<td><div class="customer_name">老李木匠店</div></td>
-				<td><div class="customer_owner">张川川</div></td>
-				<td><div class="customer_shop_name">老李木匠店</div></td>
-				<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-				<td><div class="customer_address">江苏</div></td>
-				<td>
-					<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-					</a>
-				</td>
-				<td><div class="industry">家具/家具制造业</div></td>
-				<td><div class="chance_name">SEM业务流程</div></td>
-				<td><div class="chance_cate">准备合作</div></td>
-				<td><div class="phone">13187872313</div></td>
-				<td><div class="qq">897867546</div></td>
-				<td><div class="protect_time">2017-12-12</div></td>
-				<td><div class="last_contact_time">2017-12-12</div></td>
-				<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
-			</tr>
-			<tr>
-				<td><div class="customer_name">老李木匠店</div></td>
-				<td><div class="customer_owner">张川川</div></td>
-				<td><div class="customer_shop_name">老李木匠店</div></td>
-				<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-				<td><div class="customer_address">江苏</div></td>
-				<td>
-					<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-					</a>
-				</td>
-				<td><div class="industry">家具/家具制造业</div></td>
-				<td><div class="chance_name">SEM业务流程</div></td>
-				<td><div class="chance_cate">准备合作</div></td>
-				<td><div class="phone">13187872313</div></td>
-				<td><div class="qq">897867546</div></td>
-				<td><div class="protect_time">2017-12-12</div></td>
-				<td><div class="last_contact_time">2017-12-12</div></td>
-				<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
-			</tr>
-			<tr>
-				<td><div class="customer_name">老李木匠店</div></td>
-				<td><div class="customer_owner">张川川</div></td>
-				<td><div class="customer_shop_name">老李木匠店</div></td>
-				<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-				<td><div class="customer_address">江苏</div></td>
-				<td>
-					<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-					</a>
-				</td>
-				<td><div class="industry">家具/家具制造业</div></td>
-				<td><div class="chance_name">SEM业务流程</div></td>
-				<td><div class="chance_cate">准备合作</div></td>
-				<td><div class="phone">13187872313</div></td>
-				<td><div class="qq">897867546</div></td>
-				<td><div class="protect_time">2017-12-12</div></td>
-				<td><div class="last_contact_time">2017-12-12</div></td>
-				<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
-			</tr>
-			<tr>
-				<td><div class="customer_name">老李木匠店</div></td>
-				<td><div class="customer_owner">张川川</div></td>
-				<td><div class="customer_shop_name">老李木匠店</div></td>
-				<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-				<td><div class="customer_address">江苏</div></td>
-				<td>
-					<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-					</a>
-				</td>
-				<td><div class="industry">家具/家具制造业</div></td>
-				<td><div class="chance_name">SEM业务流程</div></td>
-				<td><div class="chance_cate">准备合作</div></td>
-				<td><div class="phone">13187872313</div></td>
-				<td><div class="qq">897867546</div></td>
-				<td><div class="protect_time">2017-12-12</div></td>
-				<td><div class="last_contact_time">2017-12-12</div></td>
-				<td><div class="customer_opr"><a class="edit_customer" href="editcustomer.html">编辑</a><a class="log_op" href="javascript:void(0)">小记</a><a class="kick_out" href="javascript:void(0)">踢出</a></div></td>
-			</tr>
-		</table>
-		<div class="pg_bar">
-			<select class="pg_size">
-				<option>10</option>
-				<option>20</option>
-				<option>50</option>
-			</select>
-			<div class="pg_label">共<span>100</span>条</div>
-			<div class="pg_nums">
-				<a class="pg_pre">上一页</a>
-				<a class="pg_num">1</a>
-				<a class="pg_num">2</a>
-				<a class="pg_num cur_page">3</a>
-				<a class="pg_num">4</a>
-				<a class="pg_num">5</a>
-				<a class="pg_num">6</a>
-				<a class="pg_num">7</a>
-				<a class="pg_next disable">下一页</a>
-			</div>
-		</div>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/customer.js" ></script>
 	</body>
 </html>

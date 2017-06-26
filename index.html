@@ -6,20 +6,38 @@
 		<link rel="stylesheet" href="css/index.css" />
 	</head>
 	<body>
-		<div class="nav">
-			<a class="logo fr" target="content_frame" href="rank.html"></a>
-			<div class="fr">
-				<span class="user_tip">你好, 管理员A</span>
-				<a class="exit_login" href="login.html">退出</a>
+		<div class="nav_title">
+			<div class="main_width nav_title_in">
+				<div class="fr">
+					<span class="user_tip">你好, 管理员A</span>
+					<a class="exit_login" href="login.html">退出</a>
+				</div>
 			</div>
-			<div class="clear"></div>
 		</div>
-		<div class="menu">
-			<a class="menu_item user" path="user.html">用户管理</a>
-			<a class="menu_item public" path="customer1.html" target="content_frame">公海管理</a>
-			<a class="menu_item private" path="customer.html" target="content_frame">私海管理</a>
-			<a class="menu_item edit" path="edituser1.html" target="content_frame">个人信息</a>
-			<a class="menu_item ach" path="addachievement.html" target="content_frame">绩效管理</a>
+		<div class="nav">
+			<div class="main_width nav_in">
+				<a class="logo fr" target="content_frame" href="rank.html"></a>
+				<ul class="nav_list">
+					<li>
+						<a class="nav_item active" path="rank.html">首页</a>
+					</li>
+					<li>
+						<a class="nav_item" path="customer1.html">公海</a>
+					</li>
+					<li>	
+						<a class="nav_item" path="customer.html">私海</a>
+					</li>
+					<li>	
+						<a class="nav_item" path="edituser1.html">个人</a>
+					</li>
+					<li>
+						<a class="nav_item" path="user.html">用户</a>
+					</li>
+					<li>
+						<a class="nav_item" path="addachievement.html">绩效</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="content">
 			<iframe name="content_frame" src="rank.html"></iframe>
@@ -28,10 +46,10 @@
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
 	<script>
 		$(function(){
-			$(".menu .menu_item").click(function(){
+			$(".nav_list .nav_item").click(function(){
 				var $this = $(this);
 				if(!$this.hasClass("active")){
-					$this.addClass("active").siblings().removeClass("active");
+					$this.addClass("active").parent("li").siblings().find(".nav_item").removeClass("active");
 					window.open($this.attr("path"),"content_frame")
 				}
 			});

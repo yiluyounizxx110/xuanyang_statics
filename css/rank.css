@@ -15,6 +15,10 @@
 .none{
 	display: none;
 }
+.main{
+	width:1260px;
+	margin: 0 auto;
+}
 .title{
 	margin: 20px auto;
 	text-align: center;
@@ -27,7 +31,7 @@
 	min-height: 500px;
 	border-top:2px solid #336CA6;
 	float:left;
-	margin-left: 20px;
+	margin-left: 15px;
 }
 .empty_rank{
 	color: #D0D0D0;
@@ -89,7 +93,7 @@
 	background: url(../images/rank6.png) no-repeat 85px 9px;
 }
 .self_achievement{
-	width:500px;
+	width:360px;
 	float:right;
 }
 .self_achievement .show_div{
