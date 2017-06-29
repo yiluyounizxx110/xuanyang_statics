@@ -112,10 +112,13 @@
 	text-align: center;
 	line-height: 70px;
 }
-.self_achievement .current_achievement{
+.self_achievement .week_achievement{
 	background-color: #057BD2;
 }
-
+.self_achievement .month_achievement{
+	background-color: #089856;
+	margin-top: 30px;
+}
 .self_achievement .current_rank{
 	background-color: #FF7272;
 	margin-top: 30px;

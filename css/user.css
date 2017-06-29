@@ -69,6 +69,7 @@
 	text-indent: 10px;
 	font-size: 15px;
 	color:#8D8D8D;
+	box-sizing: border-box;
 	border: 1px solid #E2E2E2;
 }
 .form_group .label_content input[type='radio']{
