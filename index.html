@@ -18,23 +18,33 @@
 			<div class="main_width nav_in">
 				<a class="logo fr" target="content_frame" href="rank.html"></a>
 				<ul class="nav_list">
-					<li>
-						<a class="nav_item active" path="rank.html">首页</a>
+					<li class="nav_li">
+						<div class="nav_item">
+							<a class="nav_item_a" path="rank.html">首页</a>
+						</div>	
 					</li>
-					<li>
-						<a class="nav_item" path="customer1.html">公海</a>
+					<li class="nav_li">
+						<div class="nav_item">
+							<a class="nav_item_a" path="customer1.html">公海</a>
+						</div>	
 					</li>
-					<li>	
-						<a class="nav_item" path="customer.html">私海</a>
+					<li class="nav_li">
+						<div class="nav_item">
+							<a class="nav_item_a" path="customer.html">私海</a>
+						</div>
 					</li>
-					<li>	
-						<a class="nav_item" path="edituser1.html">个人</a>
-					</li>
-					<li>
-						<a class="nav_item" path="user.html">用户</a>
-					</li>
-					<li>
-						<a class="nav_item" path="addachievement.html">绩效</a>
+					<li class="nav_li">	
+						<div class="nav_item">
+							<a class="nav_item_a">用户</a>
+							<ul class="sub_nav">
+								<li><a target="content_frame" href="javascript:void(0)" path="edituser1.html">编辑个人信息</a></li>
+								<li><a target="content_frame" href="javascript:void(0)" path="user.html">用户列表</a></li>
+								<li><a target="content_frame" href="javascript:void(0)" path="addachievement.html">绩效查询</a></li>
+								<li><a target="content_frame" href="javascript:void(0)" path="addachievement.html">绩效录入</a></li>
+								<li><a target="content_frame" href="javascript:void(0)" path="workorder.html">我的工单</a></li>
+								<li><a target="content_frame" href="javascript:void(0)" path="workorderlist.html">工单查询</a></li>
+							</ul>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -45,13 +55,25 @@
 	</body>
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
 	<script>
+		function test(){
+			alert();
+		}
 		$(function(){
-			$(".nav_list .nav_item").click(function(){
-				var $this = $(this);
+			$(".nav_list .nav_item .nav_item_a").click(function(){
+				if($(this).parent().find("ul").length > 0){
+					return false;
+				}
+				var $this = $(this).parent();
 				if(!$this.hasClass("active")){
 					$this.addClass("active").parent("li").siblings().find(".nav_item").removeClass("active");
-					window.open($this.attr("path"),"content_frame")
+					window.open($(this).attr("path"),"content_frame");
 				}
+			});
+			
+			$(".nav_item .sub_nav li a").click(function(){
+				$(this).parents(".nav_item").first().addClass("active");
+				$(this).parents(".nav_li").first().siblings().find(".nav_item").removeClass("active");
+				window.open($(this).attr("path"),"content_frame");
 			});
 		});
 	</script>
