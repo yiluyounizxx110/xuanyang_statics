@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新增工单</title>
+		<link rel="stylesheet" href="css/user.css" />
+	</head>
+	<body>
+		<div class="main_width">
+			<div class="page_title"><a href="javascript:void(0);">用户中心</a>&gt; 发起工单</div>
+			<table class="workorder_main">
+				<tr>
+					<th class="workorder_title" colspan="8">0艾轩o 工单</th>
+				</tr>
+				<tr>
+					<td><div class="sub_account">子账号</div></td>
+					<td><input class="sub_account_content" type="text" placeholder="请输入子账号"/></td>
+					<td><div class="sub_account_pass">密码</div></td>
+					<td><input class="sub_account_pass_content" type="text" placeholder="请输入子账号密码"/></td>
+					<td><div class="service_starttime">发单时间</div></td>
+					<td><div class="service_starttime_content">2017-07-12 12:43:41</div></td>
+					<td><div class="service_endtime">预计完成时间</div></td>
+					<td><input class="service_endtime_content" type="text" onfocus="WdatePicker({skin:'twoer',dateFmt:'yyyy-MM-dd HH:mm:ss',readOnly:true})" placeholder="请选择预计完成时间"/></td>
+				</tr>
+				<tr>
+					<td><div class="customer_name">掌柜姓名</div></td>
+					<td><div class="customer_name_content">蒋老板</div></td>
+					<td><div class="mobile">掌柜电话</div></td>
+					<td><div class="mobile_content">15437322758</div></td>
+					<td><div class="qq">qq</div></td>
+					<td><div class="qq_content">889787845</div></td>
+					<td><div class="shop_name">店铺名称</div></td>
+					<td>
+						<div class="shop_name_content">
+							<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>张三的店铺
+							</a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><div class="customer_shop_type">网店类型</div></td>
+					<td><div class="customer_shop_type_content">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">所在地</div></td>
+					<td><div class="customer_address_content">江苏</div></td>
+					<td><div class="industry">行业</div></td>
+					<td><div class="industry_content">家具/家具制造业</div></td>
+					<td><div class="chance_name">机会名称</div></td>
+					<td><div class="chance_name_content">SEM业务流程</div></td>
+				</tr>
+				<tr>
+					<td><div class="customer_owner">业务员</div></td>
+					<td><div class="customer_owner_content">兰博</div></td>
+					<td><div class="customer_operator">操作员</div></td>
+					<td><div class="customer_operator_content">
+						<select>
+							<option>请选择</option>
+							<option>张三</option>
+							<option>李四</option>
+							<option>找李总</option>
+					    </select></div>
+					</td>
+					<td colspan="4"></td>
+				</tr>
+				<tr>
+					<td><div class="detail">事项</div></td>
+					<td colspan="7">
+						<div class="detail_content">
+							<div id="container"></div>
+						</div>
+					</td>
+				</tr>
+			</table>	
+		</div>	
+		<div class="main_width">
+			<div class="btn_group">
+				<a href="javascript:void(0);" class="savebtn" target="_self">保存</a>
+				<a href="javascript:void(0);" class="cancelbtn" target="_self">取消</a>
+			</div>
+		</div>
+		<!--<script type="text/javascript" src="js/lib/laydate/laydate.js" ></script>-->
+		<script src="js/lib/My97DatePicker/WdatePicker.js"></script>
+		<!-- 配置文件 -->
+        <script type="text/javascript" src="js/lib/ueditor1_4_3_3-utf8-jsp/utf8-jsp/ueditor.config.js"></script>
+    	<!-- 编辑器源码文件 -->
+    	<script type="text/javascript" src="js/lib/ueditor1_4_3_3-utf8-jsp/utf8-jsp/ueditor.all.min.js"></script>
+    	<script type="text/javascript">
+//  		var CheckF = $('#ChangeFlag').val();
+	        var ue = UE.getEditor('container', {
+					    toolbars: [
+					        [	
+					            'source', //源代码
+					            'formatmatch', //格式刷
+						        'removeformat', //清除格式
+					            'undo', //撤销
+						        'redo', //重做
+						        'bold', //加粗
+						        'italic', //斜体
+						        'underline', //下划线
+						        'strikethrough', //删除线
+						        'fontfamily', //字体
+						        'fontsize', //字号
+						        'forecolor', //字体颜色
+						        'backcolor', //背景色
+						        'time', //时间
+						        'date', //日期
+						        'justifyleft', //居左对齐
+						        'justifyright', //居右对齐
+						        'justifycenter', //居中对齐
+						        'justifyjustify', //两端对齐
+						        'insertorderedlist', //有序列表
+						        'insertunorderedlist', //无序列表
+						        'fullscreen', //全屏
+						        'lineheight', //行间距
+						        'inserttable', //插入表格
+						    ]
+					    ],
+					    initialFrameHeight:200,
+					    autoHeightEnabled: true,
+					    autoFloatEnabled: true});
+//			ue.addListener('ready', function () {
+//                  if (CheckF != '1') {
+//                      ue.setDisabled();
+//                  }
+//              });  		    
+	    </script>
+	</body>
+</html>

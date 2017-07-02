@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="css/user.css" />
 	</head>
 		<div class="main_width">
-			<div class="page_title"><a href="javascript:void(0);">用户中心</a>&gt; 我的工单</div>
+			<div class="page_title"><a href="javascript:void(0);">用户中心</a>&gt; 工单列表</div>
 			<div class="searchcondition">
 				<div class="form_group">
 					<div class="label_condition">工单状态</div>
@@ -33,8 +33,8 @@
 				<div class="form_group">
 					<div class="label_condition">日期</div>
 					<div class="label_content_condition">
-						<input class="datepick" type="text" placeholder="开始日期" onclick="laydate()"/>
-						<input class="datepick" type="text" placeholder="结束日期" onclick="laydate()"/>
+						<input class="datepick" type="text" placeholder="开始日期" onfocus="WdatePicker({skin:'twoer',readOnly:true})"/>
+						<input class="datepick" type="text" placeholder="结束日期" onfocus="WdatePicker({skin:'twoer',readOnly:true})"/>
 					</div>
 				</div>
 				<div class="form_group">
@@ -73,7 +73,57 @@
 					<td><div class="chance_name">SEM业务流程</div></td>
 					<td><div class="phone">13187872313</div></td>
 					<td><div class="qq">897867546</div></td>
-					<td><div class="status">待处理</div></td>
+					<td><div class="status">处理中</div></td>
+					<td><div class="create_time">2017-12-12</div></td>
+					<td><div class="opr_name">张川川</div></td>
+					<td><div class="workorder_opr">
+							<a href="javascript:void(0);">查看</a>
+							<!--<a href="javascript:void(0);">领取</a>-->
+							<a href="javascript:void(0);">完成</a>
+							<a href="javascript:void(0);">转交</a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="status done">已完成</div></td>
+					<td><div class="create_time">2017-12-12</div></td>
+					<td><div class="opr_name">张川川</div></td>
+					<td><div class="workorder_opr">
+							<a href="javascript:void(0);">查看</a>
+							<!--<a href="javascript:void(0);">领取</a>
+							<a href="javascript:void(0);">完成</a>
+							<a href="javascript:void(0);">转交</a>-->
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><div class="customer_name">老李木匠店</div></td>
+					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="status pre">待处理</div></td>
 					<td><div class="create_time">2017-12-12</div></td>
 					<td><div class="opr_name">张川川</div></td>
 					<td><div class="workorder_opr">
@@ -98,7 +148,7 @@
 					<td><div class="chance_name">SEM业务流程</div></td>
 					<td><div class="phone">13187872313</div></td>
 					<td><div class="qq">897867546</div></td>
-					<td><div class="status">待处理</div></td>
+					<td><div class="status pre">待处理</div></td>
 					<td><div class="create_time">2017-12-12</div></td>
 					<td><div class="opr_name">张川川</div></td>
 					<td><div class="workorder_opr">
@@ -123,7 +173,7 @@
 					<td><div class="chance_name">SEM业务流程</div></td>
 					<td><div class="phone">13187872313</div></td>
 					<td><div class="qq">897867546</div></td>
-					<td><div class="status">待处理</div></td>
+					<td><div class="status pre">待处理</div></td>
 					<td><div class="create_time">2017-12-12</div></td>
 					<td><div class="opr_name">张川川</div></td>
 					<td><div class="workorder_opr">
@@ -148,7 +198,7 @@
 					<td><div class="chance_name">SEM业务流程</div></td>
 					<td><div class="phone">13187872313</div></td>
 					<td><div class="qq">897867546</div></td>
-					<td><div class="status">待处理</div></td>
+					<td><div class="status pre">待处理</div></td>
 					<td><div class="create_time">2017-12-12</div></td>
 					<td><div class="opr_name">张川川</div></td>
 					<td><div class="workorder_opr">
@@ -173,7 +223,7 @@
 					<td><div class="chance_name">SEM业务流程</div></td>
 					<td><div class="phone">13187872313</div></td>
 					<td><div class="qq">897867546</div></td>
-					<td><div class="status">待处理</div></td>
+					<td><div class="status pre">待处理</div></td>
 					<td><div class="create_time">2017-12-12</div></td>
 					<td><div class="opr_name">张川川</div></td>
 					<td><div class="workorder_opr">
@@ -198,7 +248,7 @@
 					<td><div class="chance_name">SEM业务流程</div></td>
 					<td><div class="phone">13187872313</div></td>
 					<td><div class="qq">897867546</div></td>
-					<td><div class="status">待处理</div></td>
+					<td><div class="status pre">待处理</div></td>
 					<td><div class="create_time">2017-12-12</div></td>
 					<td><div class="opr_name">张川川</div></td>
 					<td><div class="workorder_opr">
@@ -223,7 +273,7 @@
 					<td><div class="chance_name">SEM业务流程</div></td>
 					<td><div class="phone">13187872313</div></td>
 					<td><div class="qq">897867546</div></td>
-					<td><div class="status">待处理</div></td>
+					<td><div class="status pre">待处理</div></td>
 					<td><div class="create_time">2017-12-12</div></td>
 					<td><div class="opr_name">张川川</div></td>
 					<td><div class="workorder_opr">
@@ -248,57 +298,7 @@
 					<td><div class="chance_name">SEM业务流程</div></td>
 					<td><div class="phone">13187872313</div></td>
 					<td><div class="qq">897867546</div></td>
-					<td><div class="status">待处理</div></td>
-					<td><div class="create_time">2017-12-12</div></td>
-					<td><div class="opr_name">张川川</div></td>
-					<td><div class="workorder_opr">
-							<a href="javascript:void(0);">查看</a>
-							<a href="javascript:void(0);">领取</a>
-							<a href="javascript:void(0);">完成</a>
-							<a href="javascript:void(0);">转交</a>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td><div class="customer_name">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
-					<td><div class="customer_shop_name">老李木匠店</div></td>
-					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-					<td><div class="customer_address">江苏</div></td>
-					<td>
-						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-						</a>
-					</td>
-					<td><div class="industry">家具/家具制造业</div></td>
-					<td><div class="chance_name">SEM业务流程</div></td>
-					<td><div class="phone">13187872313</div></td>
-					<td><div class="qq">897867546</div></td>
-					<td><div class="status">待处理</div></td>
-					<td><div class="create_time">2017-12-12</div></td>
-					<td><div class="opr_name">张川川</div></td>
-					<td><div class="workorder_opr">
-							<a href="javascript:void(0);">查看</a>
-							<a href="javascript:void(0);">领取</a>
-							<a href="javascript:void(0);">完成</a>
-							<a href="javascript:void(0);">转交</a>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td><div class="customer_name">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
-					<td><div class="customer_shop_name">老李木匠店</div></td>
-					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-					<td><div class="customer_address">江苏</div></td>
-					<td>
-						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-						</a>
-					</td>
-					<td><div class="industry">家具/家具制造业</div></td>
-					<td><div class="chance_name">SEM业务流程</div></td>
-					<td><div class="phone">13187872313</div></td>
-					<td><div class="qq">897867546</div></td>
-					<td><div class="status">待处理</div></td>
+					<td><div class="status pre">待处理</div></td>
 					<td><div class="create_time">2017-12-12</div></td>
 					<td><div class="opr_name">张川川</div></td>
 					<td><div class="workorder_opr">
@@ -331,7 +331,8 @@
 				</div>
 			</div>
 		</div>	
-		<script type="text/javascript" src="js/lib/laydate/laydate.js" ></script>
+		<!--<script type="text/javascript" src="js/lib/laydate/laydate.js" ></script>-->
+		<script src="js/lib/My97DatePicker/WdatePicker.js"></script>
 	<body>
 	</body>
 </html>

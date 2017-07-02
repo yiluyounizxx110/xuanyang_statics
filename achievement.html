@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>绩效查询</title>
+		<link rel="stylesheet" href="css/user.css" />
+	</head>
+	<body>
+		<div class="main_width">
+			<div class="page_title"><a href="javascript:void(0);">用户中心</a>&gt; 绩效查询</div>
+			<div class="searchcondition">
+				<div class="form_group">
+					<div class="label_condition">用户名</div>
+					<div class="label_content_condition">
+						<select>
+							<option>请选择</option>
+							<option>张三</option>
+							<option>李四</option>
+							<option>王五</option>
+						</select>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="label_condition">绩效类型</div>
+					<div class="label_content_condition">
+						<select class="ach_type">
+							<option>请选择</option>
+							<option value="1">日绩效</option>
+							<option value="2">周绩效</option>
+							<option value="3">月绩效</option>
+							<option value="4">季绩效</option>
+							<option value="5">年绩效</option>
+						</select>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="label_condition">日期</div>
+					<div class="label_content_condition">
+						<input class="datepick startend_time" type="text" placeholder="开始日期" onfocus="WdatePicker({skin:'twoer',readOnly:true})"/>
+						<input class="datepick startend_time" type="text" placeholder="结束日期" onfocus="WdatePicker({skin:'twoer',readOnly:true})"/>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="search_btn btn_def">搜索</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<table class="ach_list">
+				<tr>
+					<th class="start_end_time">时间</th>
+					<th class="ach_type">绩效类型</th>
+					<th class="username">姓名</th>
+					<th class="ach_detail">绩效</th>
+				</tr>
+				<tr>
+					<td><div class="start_end_time">2017年05月12日 - 2017年05月17日</div></td>
+					<td><div class="ach_type">周绩效</div></td>
+					<td><div class="username">张子涵</div></td>
+					<td><div class="ach_detail">23000.00</div></td>
+				</tr>
+				<tr>
+					<td><div class="start_end_time">2017年05月12日 - 2017年05月17日</div></td>
+					<td><div class="ach_type">周绩效</div></td>
+					<td><div class="username">张子涵</div></td>
+					<td><div class="ach_detail">23000.00</div></td>
+				</tr>
+				<tr>
+					<td><div class="start_end_time">2017年05月12日 - 2017年05月17日</div></td>
+					<td><div class="ach_type">周绩效</div></td>
+					<td><div class="username">张子涵</div></td>
+					<td><div class="ach_detail">23000.00</div></td>
+				</tr>
+				<tr>
+					<td><div class="start_end_time">2017年05月12日 - 2017年05月17日</div></td>
+					<td><div class="ach_type">周绩效</div></td>
+					<td><div class="username">张子涵</div></td>
+					<td><div class="ach_detail">23000.00</div></td>
+				</tr>
+				<tr>
+					<td><div class="start_end_time">2017年05月12日 - 2017年05月17日</div></td>
+					<td><div class="ach_type">周绩效</div></td>
+					<td><div class="username">张子涵</div></td>
+					<td><div class="ach_detail">23000.00</div></td>
+				</tr>
+				<tr>
+					<td><div class="start_end_time">2017年05月12日 - 2017年05月17日</div></td>
+					<td><div class="ach_type">周绩效</div></td>
+					<td><div class="username">张子涵</div></td>
+					<td><div class="ach_detail">23000.00</div></td>
+				</tr>
+				<tr>
+					<td><div class="start_end_time">2017年05月12日 - 2017年05月17日</div></td>
+					<td><div class="ach_type">周绩效</div></td>
+					<td><div class="username">张子涵</div></td>
+					<td><div class="ach_detail">23000.00</div></td>
+				</tr>
+				<tr>
+					<td><div class="start_end_time">2017年05月12日 - 2017年05月17日</div></td>
+					<td><div class="ach_type">周绩效</div></td>
+					<td><div class="username">张子涵</div></td>
+					<td><div class="ach_detail">23000.00</div></td>
+				</tr>
+				<tr>
+					<td><div class="start_end_time">2017年05月12日 - 2017年05月17日</div></td>
+					<td><div class="ach_type">周绩效</div></td>
+					<td><div class="username">张子涵</div></td>
+					<td><div class="ach_detail">23000.00</div></td>
+				</tr>
+				<tr>
+					<td><div class="start_end_time">2017年05月12日 - 2017年05月17日</div></td>
+					<td><div class="ach_type">周绩效</div></td>
+					<td><div class="username">张子涵</div></td>
+					<td><div class="ach_detail">23000.00</div></td>
+				</tr>
+			</table>
+			<div class="pg_bar">
+				<select class="pg_size">
+					<option>10</option>
+					<option>20</option>
+					<option>50</option>
+				</select>
+				<div class="pg_label">共<span>100</span>条</div>
+				<div class="pg_nums">
+					<a class="pg_pre">上一页</a>
+					<a class="pg_num">1</a>
+					<a class="pg_num">2</a>
+					<a class="pg_num cur_page">3</a>
+					<a class="pg_num">4</a>
+					<a class="pg_num">5</a>
+					<a class="pg_num">6</a>
+					<a class="pg_num">7</a>
+					<a class="pg_next disable">下一页</a>
+				</div>
+			</div>
+		</div>	
+		<script src="js/lib/My97DatePicker/WdatePicker.js"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script>
+			$(function(){
+				$(".searchcondition .ach_type").click(function(){
+					if($(this).val() == 3){
+						$(".startend_time").attr('onfocus',"WdatePicker({skin:'twoer',readOnly:true,dateFmt:'yyyy-MM'})")
+					}else if($(this).val() == 5){
+						$(".startend_time").attr('onfocus',"WdatePicker({skin:'twoer',readOnly:true,dateFmt:'yyyy'})")
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

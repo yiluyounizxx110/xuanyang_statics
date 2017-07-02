@@ -22,8 +22,8 @@
 				<div class="form_group">
 					<div class="label_condition">日期</div>
 					<div class="label_content_condition">
-						<input class="datepick" type="text" placeholder="开始日期" onclick="laydate()"/>
-						<input class="datepick" type="text" placeholder="结束日期" onclick="laydate()"/>
+						<input class="datepick" type="text" placeholder="开始日期" onfocus="WdatePicker({skin:'twoer',readOnly:true})"/>
+						<input class="datepick" type="text" placeholder="结束日期" onfocus="WdatePicker({skin:'twoer',readOnly:true})"/>
 					</div>
 				</div>
 				<div class="form_group">
@@ -320,7 +320,8 @@
 				</div>
 			</div>
 		</div>	
-		<script type="text/javascript" src="js/lib/laydate/laydate.js" ></script>
+		<!--<script type="text/javascript" src="js/lib/laydate/laydate.js" ></script>-->
+		<script src="js/lib/My97DatePicker/WdatePicker.js"></script>
 	<body>
 	</body>
 </html>
