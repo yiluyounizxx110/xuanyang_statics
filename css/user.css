@@ -1070,6 +1070,12 @@ table.workorder_main td .customer_operator_content select{
 	/*border: 1px solid #E2E2E2;*/
 	color:#8D8D8D;
 }
+table.workorder_main td .ws_starttime_con{
+	text-align: center;
+}
+table.workorder_main td .ws_endtime_con{
+	text-align: center;
+}
 table.workorder_main td .detail{
 	width:100px;
 	text-align: center;
