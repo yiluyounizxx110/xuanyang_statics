@@ -595,7 +595,7 @@ table.user_list tr:hover{
 }
 table.user_list .username{
 	text-align: center;
-	width:200px;
+	width:170px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -607,9 +607,16 @@ table.user_list .userrealname{
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+table.user_list .user_level{
+	text-align: center;
+	width:60px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
 table.user_list .email{
 	text-align: center;
-	width:230px;
+	width:200px;
 	white-space:nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
