@@ -80,7 +80,7 @@
 							<a href="javascript:void(0);">查看</a>
 							<!--<a href="javascript:void(0);">领取</a>-->
 							<a href="javascript:void(0);">完成</a>
-							<a href="javascript:void(0);">转交</a>
+							<a href="javascript:void(0);" class="transfer_btn">转交</a>
 						</div>
 					</td>
 				</tr>
@@ -331,8 +331,40 @@
 				</div>
 			</div>
 		</div>	
+		<div class="transfer_user_mask none">
+			<div class="transfer_user_container">
+				<div class="transfer_row">
+					<span class="transfer_row_label">转交给：</span>
+					<select class="transfer_user_select">
+						<option>请选择</option>
+						<option>张三</option>
+						<option>李四</option>
+						<option>王五</option>
+					</select>
+				</div>
+				<div class="transfer_row btn_row">
+					<div class="btn">确认</div>
+					<div class="btn cancel">取消</div>
+				</div>
+			</div>
+		</div>
 		<!--<script type="text/javascript" src="js/lib/laydate/laydate.js" ></script>-->
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/lib/layer/layer.js"></script>
 		<script src="js/lib/My97DatePicker/WdatePicker.js"></script>
+		<script>
+			$(function(){
+				$(".transfer_btn").click(function(){
+					layer.open({
+					  title:"转交工单",
+					  type: 1,
+					  skin: 'layui-layer-rim', //加上边框
+					  area: ['420px', '180px'], //宽高
+					  content: $(".transfer_user_mask").html()
+					});
+				});
+			});
+		</script>
 	<body>
 	</body>
 </html>
