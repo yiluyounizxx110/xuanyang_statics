@@ -1170,3 +1170,66 @@ table.ach_list td{
 .transfer_row.btn_row .btn.cancel:hover{
 	background-color: #8D8D8D;
 }
+.contact_notes_div{
+	width:380px;
+	height:170px;	
+	margin: 0 auto;
+}
+.contact_notes_row{
+	width: 380px;
+	display:block;
+	margin: 0px auto;
+	height: 100px;
+}
+.contact_notes_row .contact_notes_label{
+	width:50px;
+	display: inline-block;
+	line-height: 70px;
+	height:70px;
+	text-align: right;
+	float:left;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.contact_notes_row .contact_notes_remark{
+	width:300px;
+	display: inline-block;
+	font-size: 15px;
+	line-height: 25px;
+	height:70px;
+	text-align: left;
+	border:1px solid #D4D4D4;
+	float:left;
+	margin-top: 15px;
+	max-width: 300px;
+	max-height: 70px;
+	min-width: 300px;
+	min-height: 70px;
+	padding: 5px;
+	outline: none;
+}
+.contact_notes_btnrow{
+	width:220px;
+	height:40px;
+	margin: 15px auto 0px;
+}
+.contact_notes_btnrow .btn{
+	width:100px;
+	height:40px;
+	background-color: #336CA6;
+	line-height: 40px;
+	color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	float:left;
+}
+.contact_notes_btnrow .btn:hover{
+	background-color: #2a5786;
+}
+.contact_notes_btnrow .btn.cancel{
+	background-color: #D0D0D0;
+	margin-left: 20px;
+}
+.contact_notes_btnrow .btn.cancel:hover{
+	background-color: #8D8D8D;
+}
