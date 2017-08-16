@@ -1233,3 +1233,35 @@ table.ach_list td{
 .contact_notes_btnrow .btn.cancel:hover{
 	background-color: #8D8D8D;
 }
+/**小计信息***/
+table.contact_notes_list{
+	table-layout:fixed;
+	margin: 30px auto 0;
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+	font-size: 14px;
+	width:1260px;
+}
+table.contact_notes_list td,table.contact_notes_list th{
+	border: 1px solid #E2E2E2;
+	height:40px;
+	line-height: 40px;
+	border-collapse: collapse;
+}
+table.contact_notes_list th{
+	background-color: #F2F2F2;
+}
+table.contact_notes_list tr{
+	height: 40px;
+}
+table.contact_notes_list tr:hover{
+    background-color: #f8f8f8;
+}
+table.contact_notes_list .contact_time{
+	width:200px;
+	text-align: center;
+}
+table.contact_notes_list .contact_remark{
+	width:1060px;
+	text-align: center;
+}
