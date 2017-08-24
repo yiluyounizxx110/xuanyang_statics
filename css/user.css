@@ -72,6 +72,16 @@
 	box-sizing: border-box;
 	border: 1px solid #E2E2E2;
 }
+.form_group .label_content input.atcompleteinput[type='text']{
+	width:122px;
+	height:40px;
+	line-height: 40px;
+	outline: none;
+	text-indent: 10px;
+	font-size: 15px;
+	border: 1px solid #E2E2E2;
+	color:#8D8D8D;
+}
 .form_group .label_content input[type='radio']{
 	position: relative;
 	top:2px;
@@ -295,6 +305,9 @@ table.customerlist tr:hover{
 .customerlist .arranged td .customer_name{
 	background: url(../images/arranged.png) no-repeat 0px 0px;
 }
+.customerlist td .due.customer_name{
+	background: url(../images/due.png) no-repeat 0px 0px;
+}
 .customerlist td .customer_owner{
 	width:80px;
 	white-space:nowrap;
@@ -324,6 +337,12 @@ table.customerlist tr:hover{
 }
 .customerlist.private .customer_shop_name{
 	width:90px;
+}
+.customerlist.private td .customer_shop_name{
+	color:blue;
+}
+.customerlist.private td .customer_shop_name:hover{
+	color:red;
 }
 .customerlist td .customer_shop_type{
 	width:120px;
@@ -517,6 +536,20 @@ table.customerlist tr:hover{
 	height:40px;
 	float:left;
 	margin-left:200px;
+}
+.pg_nums .pg_first,.pg_nums .pg_last{
+	float:left;
+	display: inline-block;
+	cursor: pointer;
+	float:left;
+	padding: 0 10px;
+	margin: 0 5px 0 0;
+	height:40px;
+	line-height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #DCDCDC;
+	background-color: #336CA6;
+	color: #ffffff;
 }
 .pg_nums .pg_pre{
 	float:left;
@@ -1236,7 +1269,7 @@ table.ach_list td{
 /**小计信息***/
 table.contact_notes_list{
 	table-layout:fixed;
-	margin: 30px auto 0;
+	margin: 0px auto 0;
 	border: 1px solid #dddddd;
 	border-collapse: collapse;
 	font-size: 14px;
@@ -1264,4 +1297,13 @@ table.contact_notes_list .contact_time{
 table.contact_notes_list .contact_remark{
 	width:1060px;
 	text-align: center;
+}
+.title_div{
+	width:1260px;
+	height:40px;
+	margin: 0 auto;
+	text-indent: 20px;
+}
+.ac_results li strong{
+	color:red;
 }

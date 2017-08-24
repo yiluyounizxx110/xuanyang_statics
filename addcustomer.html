@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>新增客户</title>
-		<link rel="stylesheet" href="css/user.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/jquery-autocomplete/jquery.autocomplete.css"/>
+		<link rel="stylesheet" type="text/css" href="css/user.css" />
 	</head>
 	<body>
 		<div class="main">
@@ -132,7 +133,9 @@
 			<div class="form_group">
 				<div class="label"><span class="must">*</span>行业</div>
 				<div class="label_content">
-					<select class="shop_industry_select">
+					<input class="shop_industry_select atcompleteinput" type="text"/>
+					<input class="shop_industry_select_c atcompleteinput none" type="text"/>
+					<!--<select class="shop_industry_select">
 						<option>请选择</option>
 						<option value="1">家具</option>
 						<option value="2">电子</option>
@@ -144,7 +147,7 @@
 						<option>请选择</option>
 						<option>家具</option>
 						<option>零食</option>
-					</select>
+					</select>-->
 				</div>
 			</div>
 			<div class="form_group">
@@ -171,7 +174,8 @@
 			<a href="customer.html" class="savebtn" target="_self">保存</a>
 			<a href="customer.html" class="cancelbtn" target="_self">取消</a>
 		</div>
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/lib/jquery-autocomplete/lib/jquery.js" ></script>
+		<script type="text/javascript" src="js/lib/jquery-autocomplete/jquery.autocomplete.js" ></script>
 		<script type="text/javascript" src="js/addcustomer.js" ></script>
 	</body>
 </html>
