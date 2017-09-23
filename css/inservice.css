@@ -1,0 +1,57 @@
+.customerlist.inservice{
+	margin: 5px 0 0 0px;
+	width: 1268px;
+}
+.customerlist.inservice th{
+	color:#000000;
+	text-align: center;
+}
+.customerlist.inservice td div{
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color:#8D8D8D;
+}
+.customerlist.inservice .customer_name{
+	width:100px;
+}
+.customerlist.inservice .customer_yy{
+	width:65px;
+}
+.customerlist.inservice .customer_yyass{
+	width:65px;
+}
+.customerlist.inservice .customer_shop_name{
+	width:100px;
+}
+.customerlist.inservice .customer_shop_type{
+	width:120px;
+}
+.customerlist.inservice .customer_address{
+	width:50px;
+}
+.customerlist.inservice .chance_name{
+	width:90px;
+}
+.customerlist.inservice .industry{
+	width:110px;
+}
+.customerlist.inservice .chance_cate{
+	width:75px;
+}
+.customerlist.inservice .phone{
+	width:95px;
+}
+.customerlist.inservice .qq{
+	width:95px;
+}
+.customerlist.inservice .protect_time{
+	width:80px;
+}
+.customerlist.inservice .last_contact_time{
+	width:80px;
+}
+.customerlist.inservice .customer_opr{
+	width:72px;
+}

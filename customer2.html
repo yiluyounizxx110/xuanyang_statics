@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>私海</title>
+		<title>合作客户</title>
 		<link rel="stylesheet" href="css/user.css" />
+		<link rel="stylesheet" href="css/inservice.css" />
 	</head>
 	<body>
 		<div class="main_width">
@@ -38,20 +39,40 @@
 					</div>
 				</div>
 				<div class="form_group">
+					<div class="label">运营</div>
+					<div class="label_content">
+						<select>
+							<option>请选择</option>
+							<option>张三</option>
+							<option>李四</option>
+							<option>王五</option>
+						</select>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="label">运营助理</div>
+					<div class="label_content">
+						<select>
+							<option>请选择</option>
+							<option>张三</option>
+							<option>王五</option>
+							<option>李四</option>
+						</select>
+					</div>
+				</div>
+				<div class="form_group">
 					<div class="search_btn btn_def">搜索</div>
-					<div class="addcustomer_btn btn_def" onclick="window.open('addcustomer.html','_self')">新增</div>
 				</div>
 				<div class="clear"></div>
 			</div>
-			<div class="table_tools">
+			<!--<div class="table_tools">
 				<a href="javascript:void(0);">批量小计</a>
-			</div>
-			<table class="customerlist private">
+			</div>-->
+			<table class="customerlist inservice">
 				<tr>
-					<th class="customer_ck check_all"><!--<input type="checkbox" value="1"/>--></th>
-					<th class="collection">收藏</th>
 					<th class="customer_name">客户名称</th>
-					<th class="customer_owner">拥有人</th>
+					<th class="customer_yy">运营助理</th>
+					<th class="customer_yyass">运营助理</th>
 					<th class="customer_shop_name">网店</th>
 					<th class="customer_shop_type">网店类型</th>
 					<th class="customer_address">所在地</th>
@@ -66,10 +87,9 @@
 					<th class="customer_opr">操作</th>
 				</tr>
 				<tr>
-					<td class="customer_ck"><!--<input type="checkbox" value="1"/>--></td>
-					<td class="collection collected">收藏</td>
 					<td><div class="customer_name due">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_yy">张川川</div></td>
+					<td><div class="customer_yyass">张川川</div></td>
 					<td><div class="customer_shop_name">老李木匠店</div></td>
 					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
 					<td><div class="customer_address">江苏</div></td>
@@ -86,18 +106,15 @@
 					<td><div class="last_contact_time">2017-12-12</div></td>
 					<td>
 						<div class="customer_opr">
-							<a class="edit_customer" href="editcustomer.html">编辑</a>
-							<a class="log_op" href="javascript:void(0)">小记</a>
-							<a class="start_workorder" href="addworkorder.html">安排</a>
-							<a class="kick_out" href="javascript:void(0)">踢出</a>
+							<a class="edit_customer" href="editcustomer.html">查看</a>
+							<a class="log_op" href="javascript:void(0)">转交</a>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td class="customer_ck"><!--<input type="checkbox" value="1"/>--></td>
-					<td class="collection collected">收藏</td>
-					<td><div class="customer_name">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_name due">老李木匠店</div></td>
+					<td><div class="customer_yy">张川川</div></td>
+					<td><div class="customer_yyass">张川川</div></td>
 					<td><div class="customer_shop_name">老李木匠店</div></td>
 					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
 					<td><div class="customer_address">江苏</div></td>
@@ -114,18 +131,15 @@
 					<td><div class="last_contact_time">2017-12-12</div></td>
 					<td>
 						<div class="customer_opr">
-							<a class="edit_customer" href="editcustomer.html">编辑</a>
-							<a class="log_op" href="javascript:void(0)">小记</a>
-							<a class="start_workorder" href="addworkorder.html">安排</a>
-							<a class="kick_out" href="javascript:void(0)">踢出</a>
+							<a class="edit_customer" href="editcustomer.html">查看</a>
+							<a class="log_op" href="javascript:void(0)">转交</a>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td class="customer_ck"><!--<input type="checkbox" value="1"/>--></td>
-					<td class="collection">收藏</td>
-					<td><div class="customer_name">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_name due">老李木匠店</div></td>
+					<td><div class="customer_yy">张川川</div></td>
+					<td><div class="customer_yyass">张川川</div></td>
 					<td><div class="customer_shop_name">老李木匠店</div></td>
 					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
 					<td><div class="customer_address">江苏</div></td>
@@ -142,46 +156,15 @@
 					<td><div class="last_contact_time">2017-12-12</div></td>
 					<td>
 						<div class="customer_opr">
-							<a class="edit_customer" href="editcustomer.html">编辑</a>
-							<a class="log_op" href="javascript:void(0)">小记</a>
-							<a class="start_workorder" href="addworkorder.html">安排</a>
-							<a class="kick_out" href="javascript:void(0)">踢出</a>
-						</div>
-					</td>
-				</tr>
-				<tr class="arranged">
-					<td class="customer_ck"><!--<input type="checkbox" value="1"/>--></td>
-					<td class="collection">收藏</td>
-					<td><div class="customer_name">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
-					<td><div class="customer_shop_name">老李木匠店</div></td>
-					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
-					<td><div class="customer_address">江苏</div></td>
-					<td>
-						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
-						</a>
-					</td>
-					<td><div class="industry">家具/家具制造业</div></td>
-					<td><div class="chance_name">SEM业务流程</div></td>
-					<td><div class="chance_cate">准备合作</div></td>
-					<td><div class="phone">13187872313</div></td>
-					<td><div class="qq">897867546</div></td>
-					<td><div class="protect_time">2017-12-12</div></td>
-					<td><div class="last_contact_time">2017-12-12</div></td>
-					<td>
-						<div class="customer_opr">
-							<a class="edit_customer" href="editcustomer.html">编辑</a>
-							<a class="log_op" href="javascript:void(0)">小记</a>
-							<!--<a class="start_workorder" href="addworkorder.html">安排</a>-->
-							<a class="kick_out" href="javascript:void(0)">踢出</a>
+							<a class="edit_customer" href="editcustomer.html">查看</a>
+							<a class="log_op" href="javascript:void(0)">转交</a>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td class="customer_ck"><!--<input type="checkbox" value="1"/>--></td>
-					<td class="collection">收藏</td>
-					<td><div class="customer_name">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_name due">老李木匠店</div></td>
+					<td><div class="customer_yy">张川川</div></td>
+					<td><div class="customer_yyass">张川川</div></td>
 					<td><div class="customer_shop_name">老李木匠店</div></td>
 					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
 					<td><div class="customer_address">江苏</div></td>
@@ -198,18 +181,15 @@
 					<td><div class="last_contact_time">2017-12-12</div></td>
 					<td>
 						<div class="customer_opr">
-							<a class="edit_customer" href="editcustomer.html">编辑</a>
-							<a class="log_op" href="javascript:void(0)">小记</a>
-							<a class="start_workorder" href="addworkorder.html">安排</a>
-							<a class="kick_out" href="javascript:void(0)">踢出</a>
+							<a class="edit_customer" href="editcustomer.html">查看</a>
+							<a class="log_op" href="javascript:void(0)">转交</a>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td class="customer_ck"><!--<input type="checkbox" value="1"/>--></td>
-					<td class="collection">收藏</td>
-					<td><div class="customer_name">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_name due">老李木匠店</div></td>
+					<td><div class="customer_yy">张川川</div></td>
+					<td><div class="customer_yyass">张川川</div></td>
 					<td><div class="customer_shop_name">老李木匠店</div></td>
 					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
 					<td><div class="customer_address">江苏</div></td>
@@ -226,18 +206,15 @@
 					<td><div class="last_contact_time">2017-12-12</div></td>
 					<td>
 						<div class="customer_opr">
-							<a class="edit_customer" href="editcustomer.html">编辑</a>
-							<a class="log_op" href="javascript:void(0)">小记</a>
-							<a class="start_workorder" href="addworkorder.html">安排</a>
-							<a class="kick_out" href="javascript:void(0)">踢出</a>
+							<a class="edit_customer" href="editcustomer.html">查看</a>
+							<a class="log_op" href="javascript:void(0)">转交</a>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td class="customer_ck"><!--<input type="checkbox" value="1"/>--></td>
-					<td class="collection">收藏</td>
-					<td><div class="customer_name">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_name due">老李木匠店</div></td>
+					<td><div class="customer_yy">张川川</div></td>
+					<td><div class="customer_yyass">张川川</div></td>
 					<td><div class="customer_shop_name">老李木匠店</div></td>
 					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
 					<td><div class="customer_address">江苏</div></td>
@@ -254,18 +231,15 @@
 					<td><div class="last_contact_time">2017-12-12</div></td>
 					<td>
 						<div class="customer_opr">
-							<a class="edit_customer" href="editcustomer.html">编辑</a>
-							<a class="log_op" href="javascript:void(0)">小记</a>
-							<a class="start_workorder" href="addworkorder.html">安排</a>
-							<a class="kick_out" href="javascript:void(0)">踢出</a>
+							<a class="edit_customer" href="editcustomer.html">查看</a>
+							<a class="log_op" href="javascript:void(0)">转交</a>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td class="customer_ck"><!--<input type="checkbox" value="1"/>--></td>
-					<td class="collection">收藏</td>
-					<td><div class="customer_name">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_name due">老李木匠店</div></td>
+					<td><div class="customer_yy">张川川</div></td>
+					<td><div class="customer_yyass">张川川</div></td>
 					<td><div class="customer_shop_name">老李木匠店</div></td>
 					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
 					<td><div class="customer_address">江苏</div></td>
@@ -282,18 +256,15 @@
 					<td><div class="last_contact_time">2017-12-12</div></td>
 					<td>
 						<div class="customer_opr">
-							<a class="edit_customer" href="editcustomer.html">编辑</a>
-							<a class="log_op" href="javascript:void(0)">小记</a>
-							<a class="start_workorder" href="addworkorder.html">安排</a>
-							<a class="kick_out" href="javascript:void(0)">踢出</a>
+							<a class="edit_customer" href="editcustomer.html">查看</a>
+							<a class="log_op" href="javascript:void(0)">转交</a>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td class="customer_ck"><!--<input type="checkbox" value="1"/>--></td>
-					<td class="collection">收藏</td>
-					<td><div class="customer_name">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_name due">老李木匠店</div></td>
+					<td><div class="customer_yy">张川川</div></td>
+					<td><div class="customer_yyass">张川川</div></td>
 					<td><div class="customer_shop_name">老李木匠店</div></td>
 					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
 					<td><div class="customer_address">江苏</div></td>
@@ -310,18 +281,15 @@
 					<td><div class="last_contact_time">2017-12-12</div></td>
 					<td>
 						<div class="customer_opr">
-							<a class="edit_customer" href="editcustomer.html">编辑</a>
-							<a class="log_op" href="javascript:void(0)">小记</a>
-							<a class="start_workorder" href="addworkorder.html">安排</a>
-							<a class="kick_out" href="javascript:void(0)">踢出</a>
+							<a class="edit_customer" href="editcustomer.html">查看</a>
+							<a class="log_op" href="javascript:void(0)">转交</a>
 						</div>
 					</td>
 				</tr>
 				<tr>
-					<td class="customer_ck"><!--<input type="checkbox" value="1"/>--></td>
-					<td class="collection">收藏</td>
-					<td><div class="customer_name">老李木匠店</div></td>
-					<td><div class="customer_owner">张川川</div></td>
+					<td><div class="customer_name due">老李木匠店</div></td>
+					<td><div class="customer_yy">张川川</div></td>
+					<td><div class="customer_yyass">张川川</div></td>
 					<td><div class="customer_shop_name">老李木匠店</div></td>
 					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
 					<td><div class="customer_address">江苏</div></td>
@@ -338,10 +306,33 @@
 					<td><div class="last_contact_time">2017-12-12</div></td>
 					<td>
 						<div class="customer_opr">
-							<a class="edit_customer" href="editcustomer.html">编辑</a>
-							<a class="log_op" href="javascript:void(0)">小记</a>
-							<a class="start_workorder" href="addworkorder.html">安排</a>
-							<a class="kick_out" href="javascript:void(0)">踢出</a>
+							<a class="edit_customer" href="editcustomer.html">查看</a>
+							<a class="log_op" href="javascript:void(0)">转交</a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><div class="customer_name due">老李木匠店</div></td>
+					<td><div class="customer_yy">张川川</div></td>
+					<td><div class="customer_yyass">张川川</div></td>
+					<td><div class="customer_shop_name">老李木匠店</div></td>
+					<td><div class="customer_shop_type">天猫旗舰店/5金冠</div></td>
+					<td><div class="customer_address">江苏</div></td>
+					<td>
+						<a target="_blank" class="customer_shop" href="http://amos.alicdn.com/getcid.aw?v=2&uid=martin_622&site=cntaobao&s=2&groupid=0&charset=utf-8"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=martin_622&site=cntaobao&s=2&charset=utf-8" alt="查看店铺" title="查看店铺"/>
+						</a>
+					</td>
+					<td><div class="industry">家具/家具制造业</div></td>
+					<td><div class="chance_name">SEM业务流程</div></td>
+					<td><div class="chance_cate">准备合作</div></td>
+					<td><div class="phone">13187872313</div></td>
+					<td><div class="qq">897867546</div></td>
+					<td><div class="protect_time">2017-12-12</div></td>
+					<td><div class="last_contact_time">2017-12-12</div></td>
+					<td>
+						<div class="customer_opr">
+							<a class="edit_customer" href="editcustomer.html">查看</a>
+							<a class="log_op" href="javascript:void(0)">转交</a>
 						</div>
 					</td>
 				</tr>
@@ -366,49 +357,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="contact_notes_mask none">
-			<div class="contact_notes_div">
-				<div class="contact_notes_row">
-					<span class="contact_notes_label">备注：</span>
-					<textarea placeholder="请输入备注(非必填)" class="contact_notes_remark"></textarea>
-				</div>
-				<div class="contact_notes_btnrow">
-					<div class="btn">确认</div>
-					<div class="btn cancel">取消</div>
-				</div>
-			</div>
-		</div>
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
 		<script type="text/javascript" src="js/lib/layer/layer.js"></script>
 		<script type="text/javascript" src="js/customer.js" ></script>
-		<script>
-			$(".customer_opr .log_op").click(function(){
-					layer.open({
-					  title:"小计",
-					  type: 1,
-					  skin: 'layui-layer-rim', //加上边框
-					  area: ['420px', '220px'], //宽高
-					  content: $(".contact_notes_mask").html()
-					});
-				});
-//				check_all
-				$(".customer_ck").click(function(){
-					if($(this).hasClass("checked")){
-						$(this).removeClass("checked");
-					}else{
-						$(this).addClass("checked");
-					}
-					
-					if($(this).hasClass("check_all")){
-						var allCheckPage = $(this).parents("table").first().find("td.customer_ck");
-						if($(this).hasClass("checked")){
-							allCheckPage.addClass("checked");
-						}else{
-							allCheckPage.removeClass("checked");
-						}
-					}
-					
-				});
-		</script>
 	</body>
 </html>
