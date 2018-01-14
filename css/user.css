@@ -1525,6 +1525,20 @@ table.opr_log_list .opr_log_remark{
 	margin: 5px;
 	position: relative;
 }
+.hot_words .hot_words_wrap.ct a span{
+	position: absolute;
+	top:-10px;
+	right:-10px;
+	display: inline-block;
+	width: 20px;
+	height:20px;
+	line-height: 20px;
+	color: #ffffff;
+	text-align: center;
+	background: #336CA6;
+	font-size: 12px;
+	border-radius: 50%;
+}
 .hot_words .hot_words_wrap.ct a.checked{
 	color:#336CA6;
 	border:1px solid #336CA6;
