@@ -186,7 +186,25 @@
 	background-repeat: no-repeat;
 	background-position:  0px 0px;
 }
-.form_group .search_btn:hover{
+.form_group .export_btn:hover{
+	background-color: #2a5786;
+}
+.form_group .export_btn{
+	background-color: #336CA6;
+}
+.form_group .export_btn:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 16px;
+	height:16px;
+	left:12px;
+	top:12px;
+	background-image: url(../images/export.png);
+	background-repeat: no-repeat;
+	background-position:  0px 0px;
+}
+.form_group .export_btn:hover{
 	background-color: #2a5786;
 }
 .form_group .addcustomer_btn{
@@ -1367,4 +1385,157 @@ table.opr_log_list .opr_log_remark{
 	color:#336CA6;
 	font-size: 14px;
 	text-decoration: none;
+}
+
+
+
+.workorder_list.yyw .opr_name{
+	width:150px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.workorder_list.yyw .starter_name{
+	width:150px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.workorder_list.yyw .title{
+	width:550px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.workorder_list.yyw .status{
+	width:100px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.workorder_list.yyw .start_time{
+	width:155px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.workorder_list.yyw .opr_box{
+	width:150px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.workorder_list.yyw .opr_box a{
+	text-decoration: none;
+}
+
+
+.yyw_row .yyw_title{
+	width:100px;
+	text-align: center;
+}
+.yyw_row .yyw_content{
+	width:1157px;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.yyw_row .yyw_content.ct a{
+	display: inline-block;
+	padding: 5px 10px;
+	text-decoration: none;
+    color: #a9a9a9;
+    border: 1px solid #c7c7c7;
+	margin: 5px;
+	position: relative;
+}
+.yyw_row .yyw_content.ct a.checked{
+	color:#336CA6;
+	border:1px solid #336CA6;
+}
+.yyw_row .yyw_content.ct a.checked:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 16px;
+	height:16px;
+	bottom: 0;
+	right:0;
+	background: url(../images/checked-ct.png) no-repeat 2px 2px;
+}
+
+
+.hot_key_check.folder{
+	font-size: 14px;
+	display: inline-block;
+	width:72px;
+	height: 40px;
+	line-height: 40px;
+	color: #0000FF;
+	cursor: pointer;
+	position: relative;
+}
+.hot_key_check.folder:after{
+	content: "";
+	display: inline-block;
+	width:16px;
+	height:16px;
+	position: absolute;
+	top:12px;
+	cursor: pointer;
+	right:0px;
+	background: url(../images/folder.png) no-repeat 0px 0px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5;	/* Firefox 4 */
+	-webkit-transition: all 0.5;	/* Safari 和 Chrome */
+	-o-transition: all 0.5;	/* Opera */
+}
+.hot_key_check.folder.open:after{
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);		/* IE 9 */
+	-webkit-transform: rotate(180deg);	/* Safari and Chrome */
+	-o-transform: rotate(180deg);		/* Opera */
+	-moz-transform: rotate(180deg);		/* Firefox */
+}
+
+.hot_words{
+	width:1260px;
+	display: inline-block;
+}
+.hot_words.none{
+	display: none;
+}
+.hot_words .hot_words_wrap{
+	width:1260px;
+	display: inline-block;
+}
+.hot_words .hot_words_wrap.ct a{
+	font-size: 13px;
+	display: inline-block;
+	padding: 3px 10px;
+	text-decoration: none;
+    color: #a9a9a9;
+    border: 1px solid #c7c7c7;
+	margin: 5px;
+	position: relative;
+}
+.hot_words .hot_words_wrap.ct a.checked{
+	color:#336CA6;
+	border:1px solid #336CA6;
+}
+.hot_words .hot_words_wrap.ct a.checked:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 16px;
+	height:16px;
+	bottom: 0;
+	right:0;
+	background: url(../images/checked-ct.png) no-repeat 2px 2px;
 }

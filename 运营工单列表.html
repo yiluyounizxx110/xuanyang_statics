@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>工单列表</title>
+		<link rel="stylesheet" href="css/user.css" />
+	</head>
+		<div class="main_width">
+			<div class="page_title"><a href="javascript:void(0);">用户中心</a>&gt; 工单列表</div>
+			<div class="searchcondition">
+				<div class="form_group">
+					<div class="label_condition">工单状态</div>
+					<div class="label_content_condition">
+						<select>
+							<option>请选择</option>
+							<option>待处理</option>
+							<option>处理中</option>
+							<option>已完成</option>
+						</select>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="label_condition">操作人</div>
+					<div class="label_content_condition">
+						<select>
+							<option>请选择</option>
+							<option>张三</option>
+							<option>李四</option>
+							<option>王五</option>
+						</select>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="label_condition">发起人</div>
+					<div class="label_content_condition">
+						<select>
+							<option>请选择</option>
+							<option>张三</option>
+							<option>李四</option>
+							<option>王五</option>
+						</select>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="label_condition">日期</div>
+					<div class="label_content_condition">
+						<input class="datepick" type="text" placeholder="开始日期" onfocus="WdatePicker({skin:'twoer',readOnly:true})"/>
+						<input class="datepick" type="text" placeholder="结束日期" onfocus="WdatePicker({skin:'twoer',readOnly:true})"/>
+					</div>
+				</div>
+				<div class="form_group">
+					<div class="search_btn btn_def">搜索</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<table class="workorder_list yyw">
+				<tr>
+					<th class="opr_name">操作人</th>
+					<th class="starter_name">发起人</th>
+					<th class="title">标题</th>
+					<th class="status">状态</th>
+					<th class="start_time">发起时间</th>
+					<th class="opr_box">操作</th>
+				</tr>
+				<tr>
+					<td><div class="opr_name">张川川</div></td>
+					<td><div class="starter_name">北斗</div></td>
+					<td><div class="title">2017年10月份老李木匠铺操作事项</div></td>
+					<td><div class="status">处理中</div></td>
+					<td><div class="start_time">2017-10-11 12:22:12</div></td>
+					<td>
+						<div class="opr_box">
+							<a href="javascript:void(0);">查看</a>
+							<a href="javascript:void(0);">完成</a>
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+			<div class="pg_bar">
+				<select class="pg_size">
+					<option>10</option>
+					<option>20</option>
+					<option>50</option>
+				</select>
+				<div class="pg_label">共<span>100</span>条</div>
+				<div class="pg_nums">
+					<a class="pg_pre">上一页</a>
+					<a class="pg_num">1</a>
+					<a class="pg_num">2</a>
+					<a class="pg_num cur_page">3</a>
+					<a class="pg_num">4</a>
+					<a class="pg_num">5</a>
+					<a class="pg_num">6</a>
+					<a class="pg_num">7</a>
+					<a class="pg_next disable">下一页</a>
+				</div>
+			</div>
+		</div>	
+		<div class="transfer_user_mask none">
+			<div class="transfer_user_container">
+				<div class="transfer_row">
+					<span class="transfer_row_label">转交给：</span>
+					<select class="transfer_user_select">
+						<option>请选择</option>
+						<option>张三</option>
+						<option>李四</option>
+						<option>王五</option>
+					</select>
+				</div>
+				<div class="transfer_row btn_row">
+					<div class="btn">确认</div>
+					<div class="btn cancel">取消</div>
+				</div>
+			</div>
+		</div>
+		<!--<script type="text/javascript" src="js/lib/laydate/laydate.js" ></script>-->
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/lib/layer/layer.js"></script>
+		<script src="js/lib/My97DatePicker/WdatePicker.js"></script>
+		<script>
+			$(function(){
+				$(".transfer_btn").click(function(){
+					layer.open({
+					  title:"转交工单",
+					  type: 1,
+					  skin: 'layui-layer-rim', //加上边框
+					  area: ['420px', '180px'], //宽高
+					  content: $(".transfer_user_mask").html()
+					});
+				});
+			});
+		</script>
+	<body>
+	</body>
+</html>
