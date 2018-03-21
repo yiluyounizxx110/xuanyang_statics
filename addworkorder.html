@@ -66,11 +66,28 @@
 					<td><div class="ws_endtime_con">2017-07-14</div></td>
 				</tr>
 				<tr class="yyw_row">
+					<td><div class="yyw_priority">优先级</div></td>
+					<td colspan="7">
+						<div class="yyw_priority_option">
+							<span class="ck_lable active">普通</span>
+							<span class="ck_lable">紧急</span>
+						</div>
+					</td>
+				</tr>	
+				<tr class="yyw_row">
 					<td class="yyw_title">工单内容</td>
 					<td colspan="7">
 						<div class="yyw_content ct">
-							<a href="javascript:void(0)" class="ct_item checked">页面优化</a>
-							<a href="javascript:void(0)" class="ct_item">活动海报</a>
+							<a href="javascript:void(0)" class="ct_item checked"><span class="tag_txt">页面优化</span>
+								<span class="num">
+									<span class="num_in"><input type="text" value="1"/></span>
+									<span class="before">-</span>
+									<span class="after">+</span>
+								</span>
+							</a>
+							<a href="javascript:void(0)" class="ct_item">活动海报
+								<span class="total">9</span>
+							</a>
 							<a href="javascript:void(0)" class="ct_item">首页制作</a>
 							<a href="javascript:void(0)" class="ct_item">创意图</a>
 							<a href="javascript:void(0)" class="ct_item">页面优化</a>
@@ -91,7 +108,7 @@
 							<a href="javascript:void(0)" class="ct_item">创意图</a>
 						</div>
 					</td>
-				</tr>-->
+				</tr>
 				<tr>
 					<td><div class="detail">事项</div></td>
 					<td colspan="7">
@@ -124,6 +141,87 @@
 					$(this).addClass("checked");
 				}
 			});
+			$("body").on("keydown",".yyw_row .yyw_content.ct a span.num .num_in input",function(e){
+				var text = $(this).val();
+				var num = 1;
+				if($.isNumeric(text)){
+					num = parseInt(text);
+				}
+				if(e.keyCode == 38){
+					if(num >= 99){
+						$(this).val(99);
+					}else if(num < 1){
+						$(this).val(1);
+					}else{
+						$(this).val(num + 1);
+					}
+				}else if(e.keyCode == 40){
+					if(num >= 100){
+						$(this).val(99);
+					}else if(num <= 1){
+						$(this).val(1);
+					}else{
+						$(this).val(num - 1);
+					}
+				}
+				e.stopPropagation();
+			});
+			$("body").on("blur",".yyw_row .yyw_content.ct a span.num .num_in input",function(e){
+				var text = $(this).val();
+				var num = 1;
+				if($.isNumeric(text)){
+					num = parseInt(text);
+				}
+				if(num >= 99){
+					$(this).val(99);
+				}else if(num < 1){
+					$(this).val(1);
+				}else{
+					$(this).val(num);
+				}
+				e.stopPropagation();
+			});
+			$("body").on("click",".yyw_row .yyw_content.ct a span.num",function(e){
+				e.stopPropagation();
+			});
+			$("body").on("click",".yyw_row .yyw_content.ct a span.num .after",function(e){
+				var num = 1;
+				var contianer = $(this).siblings(".num_in").find("input").first();
+				var text = contianer.val();
+				if($.isNumeric(text)){
+					num = parseInt(text);
+				}
+				if(num < 99 && num > 0){
+					contianer.val(num+1);
+				}else if(num >= 99){
+					contianer.val(99);
+				}else{
+					contianer.val(1);
+				}
+				e.stopPropagation();
+			});
+			$("body").on("click",".yyw_row .yyw_content.ct a span.num .before",function(e){
+				var num = 1;
+				var contianer = $(this).siblings(".num_in").find("input").first();
+				var text = contianer.val();
+				if($.isNumeric(text)){
+					num = parseInt(text);
+				}
+				if(num <= 99 && num > 1){
+					contianer.val(num-1);
+				}else if(num >= 99){
+					contianer.val(99);
+				}else{
+					contianer.val(1);
+				}
+				e.stopPropagation();
+			});
+			$("body").on("click",".yyw_priority_option .ck_lable",function(){
+				if(!$(this).hasClass("active")){
+					$(this).addClass("active").siblings().removeClass("active");
+				}
+			})
+//			38 40
 //  		var CheckF = $('#ChangeFlag').val();
 	        var ue = UE.getEditor('container', {
 					    toolbars: [
