@@ -38,6 +38,9 @@
 					</div>
 				</div>
 				<div class="form_group">
+					<div class="label checkbox checked">即将到期</div>
+				</div>
+				<div class="form_group">
 					<div class="search_btn btn_def">搜索</div>
 					<div class="addcustomer_btn btn_def" onclick="window.open('addcustomer.html','_self')">新增</div>
 				</div>
@@ -409,6 +412,9 @@
 					}
 					
 				});
+				$(".form_group .label.checkbox").click(function(){
+					$(this).toggleClass("checked")
+				})
 		</script>
 	</body>
 </html>

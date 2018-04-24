@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>编辑客户</title>
 		<link rel="stylesheet" href="css/user.css" />
+		<link rel="stylesheet" href="css/common.css"/>
 	</head>
 	<body>
 		<div class="main">
@@ -149,14 +150,16 @@
 			</div>
 			<div class="form_group">
 				<div class="label">手机</div>
-				<div class="label_content">
-					<input name="" placeholder="手机" type="text" value="15378781123"/>
+				<div class="label_content copy">
+					<input name="phone" id="phone" readonly="readonly" placeholder="手机" type="text" value="15378781123"/>
+					<span class="copybtn" data-clipboard-target="#phone"><img src="images/clippy.svg" alt="复制"/></span>
 				</div>
 			</div>
 			<div class="form_group">
 				<div class="label">QQ</div>
-				<div class="label_content">
-					<input name="" placeholder="QQ" type="text" value="990722162"/>
+				<div class="label_content copy">
+					<input name="" id ="qq" placeholder="QQ" type="text" value="990722162"/>
+					<span class="copybtn" data-clipboard-target="#qq"><img src="images/clippy.svg" alt="复制"/></span>
 				</div>
 			</div>
 			<div class="form_group">
@@ -171,6 +174,94 @@
 			<a href="customer.html" class="savebtn" target="_self">保存</a>
 			<a href="customer.html" class="cancelbtn" target="_self">取消</a>
 		</div>
+		
+		<div class="tab_main">
+			<div class="tab_title">
+				<span class="tab_title_item active">操作日志</span>
+				<span class="tab_title_item">小计日志</span>
+				<span class="tab_title_item">小计日志</span>
+				<span class="tab_title_item">小计日志</span>
+				<span class="tab_title_item">小计日志</span>
+				<span class="tab_title_item">小计日志</span>
+				<span class="tab_title_item">小计日志</span>
+				<span class="tab_title_item">小计日志</span>
+				<span class="tab_title_item">小计日志</span>
+				<span class="tab_title_item">小计日志</span>
+			</div>
+			<div class="tab_content">
+				<div class="tab_content_item active">
+					<table class="opr_log_list xuany_table">
+						<tr>
+							<th class="opr_log_time">时间</th>
+							<th class="opr_log_user">操作人</th>
+							<th class="opr_log_remark">备注</th>
+						</tr>
+						<tr class="cursor">
+							<td class="opr_log_time">2014年01月12日 12:12:12</td>
+							<td class="opr_log_user">朱星星</td>
+							<td class="opr_log_remark">月服务费2000</td>
+						</tr>						
+						<tr class="cursor">
+							<td class="opr_log_time">2014年01月12日 12:12:12</td>
+							<td class="opr_log_user">朱星星</td>
+							<td class="opr_log_remark">月服务费2000</td>
+						</tr>
+						<tr class="cursor">
+							<td class="opr_log_time">2014年01月12日 12:12:12</td>
+							<td class="opr_log_user">朱星星</td>
+							<td class="opr_log_remark">月服务费2000</td>
+						</tr>
+					</table>
+				</div>
+				<div class="tab_content_item">
+					<table class="contact_notes_list xuany_table">
+						<tr>
+							<th class="contact_time">收藏</th>
+							<th class="contact_remark">备注</th>
+						</tr>
+						<tr class="cursor">
+							<td class="contact_time">2014年01月12日 12:12:12</td>
+							<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000</td>
+						</tr>
+						<tr class="cursor">
+							<td class="contact_time">2014年01月12日 12:12:12</td>
+							<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000</td>
+						</tr>
+						<tr class="cursor">
+							<td class="contact_time">2014年01月12日 12:12:12</td>
+							<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000</td>
+						</tr>
+						<tr class="cursor">
+							<td class="contact_time">2014年01月12日 12:12:12</td>
+							<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000</td>
+						</tr>
+						<tr class="cursor">
+							<td class="contact_time">2014年01月12日 12:12:12</td>
+							<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000</td>
+						</tr>
+					</table>
+				</div>
+				<div class="tab_content_item">3</div>
+				<div class="tab_content_item">4</div>
+				<div class="tab_content_item">5</div>
+				<div class="tab_content_item">6</div>
+				<div class="tab_content_item">7</div>
+				<div class="tab_content_item">8</div>
+				<div class="tab_content_item">9</div>
+				<div class="tab_content_item">10</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		<!--
+        	作者：990722162@qq.com
+        	时间：2018-04-06
+        	描述：
+        -->
+		
+		<!--
 		<div class="title_div">小计记录</div>
 		<table class="contact_notes_list xuany_table">
 			<tr>
@@ -179,17 +270,24 @@
 			</tr>
 			<tr class="cursor">
 				<td class="contact_time">2014年01月12日 12:12:12</td>
-				<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<</td>
+				<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000</td>
 			</tr>
 			<tr class="cursor">
 				<td class="contact_time">2014年01月12日 12:12:12</td>
-				<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<</td>
+				<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000</td>
 			</tr>
 			<tr class="cursor">
 				<td class="contact_time">2014年01月12日 12:12:12</td>
-				<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<已和用户联系明天操作，签订合同，月服务费2000<</td>
+				<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000</td>
 			</tr>
-			
+			<tr class="cursor">
+				<td class="contact_time">2014年01月12日 12:12:12</td>
+				<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000</td>
+			</tr>
+			<tr class="cursor">
+				<td class="contact_time">2014年01月12日 12:12:12</td>
+				<td class="contact_remark">已和用户联系明天操作，签订合同，月服务费2000已和用户联系明天操作，签订合同，月服务费2000</td>
+			</tr>
 		</table>
 		<div class="title_div">操作日志</div>
 		<table class="opr_log_list xuany_table">
@@ -202,7 +300,7 @@
 				<td class="opr_log_time">2014年01月12日 12:12:12</td>
 				<td class="opr_log_user">朱星星</td>
 				<td class="opr_log_remark">月服务费2000</td>
-			</tr>
+			</tr>						
 			<tr class="cursor">
 				<td class="opr_log_time">2014年01月12日 12:12:12</td>
 				<td class="opr_log_user">朱星星</td>
@@ -214,7 +312,41 @@
 				<td class="opr_log_remark">月服务费2000</td>
 			</tr>
 		</table>
+		-->
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
-		<script type="text/javascript" src="js/addcustomer.js" ></script>
+		<script type="text/javascript" src="js/clipboard.js/clipboard.min.js" ></script>
+		<script type="text/javascript" src="js/lib/layer/layer.js" ></script>
+		<!--<script type="text/javascript" src="js/addcustomer.js" ></script>-->
+		<script>
+			$(function(){
+				$(".tab_main .tab_title .tab_title_item").on("click",function(){
+					if($(this).hasClass("active")){
+						return false;
+					}
+					var index = $(this).index();
+					$(this).addClass("active").siblings().removeClass("active");
+					$(this).parent().siblings(".tab_content").find(".tab_content_item:eq(" + index + ")").addClass("active").siblings().removeClass("active");
+				});
+				
+				var clipboard = new ClipboardJS('.copybtn');
+
+				clipboard.on('success', function(e) {
+				    e.clearSelection();
+				    var selector = $(e.trigger).attr("data-clipboard-target");
+				    layer.open({
+					  type: 4,
+					  time:1000,
+					  shade :0,
+					  closeBtn:0,
+					  content: ['复制成功', selector] //数组第二项即吸附元素选择器或者DOM
+					}); 
+				});
+				
+				clipboard.on('error', function(e) {
+				    console.error('Action:', e.action);
+				    console.error('Trigger:', e.trigger);
+				});
+			})	
+		</script>
 	</body>
 </html>

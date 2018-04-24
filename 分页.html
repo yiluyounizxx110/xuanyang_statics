@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/pagination.css" />
+	</head>
+	<body>
+		<div style="width:1000px;border:1px solid red;">
+			<div class="pg_bar">
+				<select class="pg_size">
+					<option>10</option>
+					<option>20</option>
+					<option>50</option>
+				</select>
+				<div class="pg_label">共<span>100</span>条<span>100</span>页</div>
+				<div class="pg_nums">
+					<a class="pg_pre">上一页</a>
+					<a class="pg_num">1</a>
+					<a class="pg_num">2</a>
+					<a class="pg_num cur_page">3</a>
+					<a class="pg_num">4</a>
+					<a class="pg_num">5</a>
+					<a class="pg_num">6</a>
+					<a class="pg_num">7</a>
+					<a class="pg_next disable">下一页</a>
+				</div>
+			</div>
+		</div>
+		<div style="width:1000px;border:1px solid red;">
+			<div class="newPg pg_bar"></div>
+		</div>	
+		<div style="width:1000px;border:1px solid red;">
+			<div class="newPg6 pg_bar"></div>
+		</div>	
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/pagination.js" ></script>
+		<script>
+			$(function(){
+				$(".newPg").pagination({
+					showSelect:true,
+					pageList:[10,20,50,100,200],
+					total: 100000, //数据总条数
+			        pageSize: 10, //每页显示的条数
+				});
+				$(".newPg6").pagination({
+					total: 1000, //数据总条数
+			        pageSize: 20, //每页显示的条数
+				});
+			});
+			
+		</script>
+	</body>
+</html>

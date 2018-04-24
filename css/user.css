@@ -54,12 +54,57 @@
 	text-align: right;
 	color:#8D8D8D;
 }
+.form_group .label.checkbox{
+	cursor: pointer;
+}
+.form_group .label.checkbox:before{
+	position: relative;
+	right:8px;
+	top:3px;
+	content: '';
+	display: inline-block;
+	width:16px;
+	height:16px;
+	text-align: right;
+	background: url(../images/lable_nocheck.png);
+}
+.form_group .label.checkbox.checked:before{
+	background: url(../images/lable_checked.png);
+}
 .form_group .label_content{
 	width:250px;
 	height:40px;
 	line-height: 40px;
 	display: inline-block;
 	margin-left: 20px;
+}
+.form_group .label_content.copy{
+	position:relative;
+}
+.form_group .label_content.copy input{
+	padding-right: 40px;
+}
+.form_group .label_content .copybtn{
+	display: inline-block;
+	position: absolute;
+	font-size: 13px;
+	width: 38px;
+	height:38px;
+	border-left: 1px solid #d5d5d5;
+	cursor: pointer;
+	background-color: #eee;
+    background-image: linear-gradient(#fcfcfc,#eee);
+	right:1px;
+	top:1px;
+}
+.form_group .label_content .copybtn:hover{
+	background-color: #ddd;
+	background-image: linear-gradient(#eee,#ddd);
+}
+.form_group .label_content .copybtn img{
+	margin-left: 12px;
+	margin-top: 11px;
+	width:14px;
 }
 .form_group .label_content input[type='text'],.form_group .label_content input[type='password']{
 	width:250px;
@@ -185,6 +230,9 @@
 	background-image: url(../images/search.png);
 	background-repeat: no-repeat;
 	background-position:  0px 0px;
+}
+.form_group .search_btn:hover{
+	background-color: #2a5786;
 }
 .form_group .export_btn:hover{
 	background-color: #2a5786;
@@ -619,6 +667,8 @@ table.customerlist tr:hover{
 	display: inline-block;
 	float:left;
 	padding: 0 10px;
+	min-width: 40px;
+	text-align:center;
 	margin: 0 5px;
 	height:40px;
 	color:#8D8D8D;

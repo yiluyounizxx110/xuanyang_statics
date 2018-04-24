@@ -38,6 +38,13 @@ $(function(){
 	    ],
 	    initialFrameHeight:200,
 	    autoHeightEnabled: true,
-	    autoFloatEnabled: false
+	    autoFloatEnabled: false,
+	    imageUrlPrefix:"http://localhost:8020/xuanyang_statics/",
+        imagePathFormat : "/ueditor/php/upload/image/{yyyy}-{mm}-{dd}_{rand:6}_{filename}" ,
+        "imageUrl": "http://localhost/ueditor/php/controller.php?action=uploadimage",
+    "imagePath": "/ueditor/php/",
+    "imageFieldName": "upfile",
+    "imageMaxSize": 2048,
+    "imageAllowFiles": [".png", ".jpg", ".jpeg", ".gif", ".bmp"]
 	});
 });
